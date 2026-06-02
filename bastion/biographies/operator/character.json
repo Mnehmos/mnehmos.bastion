@@ -1,0 +1,37 @@
+{
+  "id": "4388bdee-f108-4275-8377-470eb0bd68a5",
+  "name": "Cole Maddox",
+  "race": "Human",
+  "characterClass": "Operator",
+  "level": 1,
+  "characterType": "pc",
+  "hp": 12,
+  "maxHp": 12,
+  "ac": 12,
+  "stats": {
+    "str": 13,
+    "dex": 11,
+    "con": 14,
+    "int": 13,
+    "wis": 16,
+    "cha": 10
+  },
+  "origin": {
+    "universe": "Contemporary Earth — Morenci Copper Mine, Arizona",
+    "native": false,
+    "arrivedAt": "PD 606",
+    "arrivedInCohortId": "c0407606-0606-4606-8606-000000000606"
+  },
+  "resourcePools": {
+    "attentional_capacity": {
+      "current": 2,
+      "max": 3,
+      "lastRefilledAt": "2026-06-02T14:56:50.355Z"
+    }
+  },
+  "background": "Heavy-Equipment Operator (Morenci Copper Mine, Arizona)",
+  "behavior": "Competent, dry, not easily rattled, allergic to bullshit. Reads a situation for the load-bearing hazard before he acts. Respects lethal physics; games systems for the pleasure of it. Petitions the System; never authors his own outcomes.",
+  "boundSubsystems": [
+    "constraint-perception"
+  ]
+}

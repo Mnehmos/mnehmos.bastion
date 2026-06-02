@@ -1,0 +1,180 @@
+{
+  "biography": "operator",
+  "chapter": "ch01-wrong-air",
+  "title": "Wrong Air",
+  "world": {
+    "id": "33e0a378-0278-41ea-bd7a-1645b914a777",
+    "name": "Sebastopyr",
+    "pd": "606"
+  },
+  "convergence": "ch1-the-first-rite",
+  "convergesWith": "mnehmos/ch01-an-address",
+  "note": "Engine Log is ledger-sourced. Every value is a committed row in rpg-mcp; none was typed by hand. The dm_only secret is not present here by design.",
+  "character": {
+    "id": "4388bdee-f108-4275-8377-470eb0bd68a5",
+    "name": "Cole Maddox",
+    "character_class": "Operator",
+    "level": 1,
+    "character_type": "pc",
+    "origin": {
+      "universe": "Contemporary Earth — Morenci Copper Mine, Arizona",
+      "native": false,
+      "arrivedAt": "PD 606",
+      "arrivedInCohortId": "c0407606-0606-4606-8606-000000000606"
+    }
+  },
+  "subsystem": "constraint-perception",
+  "perception_assessments": [
+    {
+      "id": "pa_4388bdee-f108-4275-8377-470eb0bd68a5_1_1780412210356",
+      "seq": 1,
+      "prev_seq": null,
+      "event_hash": "48e4b468c7f68d3a2cd0f8c26f6a318caf2820a9032bbb061104a5e71cddd8a6",
+      "intent_id": "f9b0d427-7a7e-4cb8-ad3b-3a6573e3a69b",
+      "observer_id": "4388bdee-f108-4275-8377-470eb0bd68a5",
+      "target_ref_kind": "room",
+      "target_ref_id": "recovery_grant",
+      "hazards": [],
+      "applicable_controls": [],
+      "blind_spots": [],
+      "disposition": "commit",
+      "reject_reason": null,
+      "cost_paid": 0,
+      "capacity_remaining_after": 3,
+      "created_at": "2026-06-02T14:56:50.356Z"
+    },
+    {
+      "id": "pa_4388bdee-f108-4275-8377-470eb0bd68a5_2_1780412529301",
+      "seq": 2,
+      "prev_seq": 1,
+      "event_hash": "7e46f84a1b040fb85024e101ba1ca35ec6b458348b4458795cdcdb6a7c63c53f",
+      "intent_id": "bcd25447-7cbe-4053-b041-9c9d57d3b492",
+      "observer_id": "4388bdee-f108-4275-8377-470eb0bd68a5",
+      "target_ref_kind": "room",
+      "target_ref_id": "e33202b2-7d2d-4227-b7f7-ec9eabf3be2f",
+      "hazards": [
+        {
+          "id": "room_e33202b2-7d2d-4227-b7f7-ec9eabf3be2f_atmos_MAGICAL",
+          "name": "Magical Disturbance",
+          "kind": "environmental",
+          "sourceEvidence": {
+            "tool": "spatial_manage",
+            "rowId": "e33202b2-7d2d-4227-b7f7-ec9eabf3be2f",
+            "committedAt": "2026-06-01T20:48:26.268Z"
+          },
+          "severity": "moderate"
+        }
+      ],
+      "applicable_controls": [
+        {
+          "rank": 1,
+          "level": "elimination",
+          "countermeasureSummary": "Identify and dispel the source of Magical Disturbance.",
+          "requires": [
+            "identify_source_row"
+          ],
+          "blockedBy": [],
+          "confidence": "partial",
+          "missingDataForHigherLevel": "source_row_for_environmental_hazard_not_committed; commit via narrative_manage.add canonical_moment with placed_by metadata"
+        },
+        {
+          "rank": 2,
+          "level": "engineering",
+          "countermeasureSummary": "Use a committed door or wall to break line-of-sight to Magical Disturbance.",
+          "requires": [
+            "known_exit"
+          ],
+          "blockedBy": [],
+          "confidence": "partial"
+        },
+        {
+          "rank": 3,
+          "level": "administrative",
+          "countermeasureSummary": "Withdraw, rest, and re-approach Magical Disturbance when the party is ready.",
+          "requires": [],
+          "blockedBy": [],
+          "confidence": "high"
+        },
+        {
+          "rank": 4,
+          "level": "ppe",
+          "countermeasureSummary": "Equip armor, resistance items, and prepare protective spells against Magical Disturbance.",
+          "requires": [
+            "inventory_access"
+          ],
+          "blockedBy": [],
+          "confidence": "high"
+        }
+      ],
+      "blind_spots": [
+        {
+          "whatKindOfDataIsMissing": "room_entities",
+          "whyItMatters": "No creatures or props are committed to this room. If the scene-text implied any, they need to be spawned for the lens to see them.",
+          "suggestedQuery": "spawn_manage action:\"spawn_character\" roomId:\"e33202b2-7d2d-4227-b7f7-ec9eabf3be2f\""
+        }
+      ],
+      "disposition": "commit",
+      "reject_reason": null,
+      "cost_paid": 1,
+      "capacity_remaining_after": 2,
+      "created_at": "2026-06-02T15:02:09.301Z"
+    }
+  ],
+  "event_logs": [
+    {
+      "id": 136,
+      "type": "perception_assessment",
+      "payload": {
+        "observerId": "4388bdee-f108-4275-8377-470eb0bd68a5",
+        "disposition": "commit",
+        "recoveryVia": "grant",
+        "before": 0,
+        "after": 3,
+        "intentId": "f9b0d427-7a7e-4cb8-ad3b-3a6573e3a69b"
+      },
+      "timestamp": "2026-06-02T14:56:50.357Z"
+    },
+    {
+      "id": 137,
+      "type": "perception_assessment",
+      "payload": {
+        "observerId": "4388bdee-f108-4275-8377-470eb0bd68a5",
+        "assessmentId": "pa_4388bdee-f108-4275-8377-470eb0bd68a5_2_1780412529301",
+        "disposition": "commit",
+        "hazardCount": 1,
+        "blindSpotCount": 1,
+        "intentId": "bcd25447-7cbe-4053-b041-9c9d57d3b492"
+      },
+      "timestamp": "2026-06-02T15:02:09.302Z"
+    }
+  ],
+  "agent_calls": [
+    {
+      "id": "ea4608f5-08d3-4546-853f-2e6df1333a85",
+      "agent_id": "e6ba847b-e60f-4c3e-bca6-1fb95dd69167",
+      "request_id": "default",
+      "provider": "openai",
+      "model": "gpt-5-nano",
+      "prompt_tokens": 2043,
+      "completion_tokens": 3522,
+      "duration_ms": 21124,
+      "status": "ok",
+      "reasoning_effort": "medium",
+      "created_at": "2026-06-02T14:59:32.319Z"
+    },
+    {
+      "id": "3abf8cda-f755-43b1-a4fc-43a62fcd8136",
+      "agent_id": "e6ba847b-e60f-4c3e-bca6-1fb95dd69167",
+      "request_id": "default",
+      "provider": "openai",
+      "model": "gpt-5-nano",
+      "prompt_tokens": 2260,
+      "completion_tokens": 2596,
+      "duration_ms": 16010,
+      "status": "ok",
+      "reasoning_effort": "medium",
+      "created_at": "2026-06-02T15:03:38.131Z"
+    }
+  ],
+  "canonical_moment": "c37ee91b-4aec-4384-ab55-c697656c759a"
+}

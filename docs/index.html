@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bastion — the last city</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&display=swap">
+<link rel="stylesheet" href="./assets/site.css">
+<style>:root{ --c-night: #0b0c0e; --c-paper: #e9e4d8; --c-accent: #c4632a; --c-ash: #6b6258; --c-line: rgba(196,99,42,.25); --f-display: "Oswald", system-ui, sans-serif; --f-serif: "Newsreader", Georgia, serif; --f-mono: "JetBrains Mono", ui-monospace, monospace; }</style>
+</head>
+<body class="page-city motif-ash">
+<div class="bg" aria-hidden="true"></div>
+<header class="site-head">
+  <div class="wrap site-head__row">
+    <a class="brand" href="./index.html"><span class="brand__sigil">◆</span> BASTION</a>
+    <nav class="site-nav"><a href="./index.html">Bastion</a><a href="./biographies/operator/index.html">The Operator</a><a href="./biographies/mnehmos/index.html">Mnehmos</a><a href="./city/timeline.html">City Timeline</a><a href="./about.html">About</a></nav>
+  </div>
+</header>
+<main class="wrap">
+
+  <section class="hero hero--city">
+    <p class="hero__kicker">The last city · PD 606</p>
+    <h1 class="hero__title">Bastion is the last city.<br>It summons heroes from every kind of world.</h1>
+    <p class="hero__lede">Their powers arrive intact. Nothing is balanced. The city only records what survives. <strong>Every number is real; the dice are honest; the protagonist can actually lose — and did.</strong> Read it as a novel, or check the math yourself.</p>
+    <div class="hero__cta"><a class="btn" href="city/timeline.html">The city timeline →</a><a class="btn btn--ghost" href="about.html">How this is made</a></div>
+  </section>
+
+  <section class="sec">
+    <h2 class="sec__h">The lives</h2>
+    <div class="biogrid"><a class="biocard" href="biographies/operator/index.html" style="--card-accent:#d4711c">
+      <div class="biocard__sigil">▣</div>
+      <div class="biocard__name">Cole Maddox</div>
+      <div class="biocard__role">Operator · Biography #2</div>
+      <div class="biocard__world">contemporary Earth — an Arizona copper mine</div>
+      <div class="biocard__teaser">One second in the cab; the next, a room that smells wrong and a voice that already knew his name.</div>
+      <span class="biocard__go">Read →</span>
+    </a><a class="biocard" href="biographies/mnehmos/index.html" style="--card-accent:#b89a4a">
+      <div class="biocard__sigil">✦</div>
+      <div class="biocard__name">Mnehmos</div>
+      <div class="biocard__role">The Summoner-Priest · Biography #1 (the devlog)</div>
+      <div class="biocard__world">Sebastopyr — the last city, the cathedral</div>
+      <div class="biocard__teaser">He did not take whoever the void handed him. He chose them — by name, by nature — and he knows what choosing costs.</div>
+      <span class="biocard__go">Read →</span>
+    </a></div>
+  </section>
+
+  <section class="sec">
+    <h2 class="sec__h">The first cohort</h2>
+    <p class="sec__lede">One rite. Many souls, chosen on purpose. The Operator was not summoned alone — these arrived with him, and each is a life still to be written.</p>
+    <ul class="cohort"><li><b>Cole Maddox</b> <span class="muted">— the Operator</span></li><li><b>Renata Salk</b> <span class="muted">— Field Surgeon · future biography</span></li><li><b>Bohdan Cerny</b> <span class="muted">— Mason · future biography</span></li><li><b>Yuki Aritomo</b> <span class="muted">— Surveyor · future biography</span></li><li><b>Wren Adebayo</b> <span class="muted">— Quartermaster · future biography</span></li></ul>
+  </section>
+
+  <section class="sec sec--made">
+    <h2 class="sec__h">How this is made <span class="sigil">◆</span></h2>
+    <p>Bastion runs on a real game engine. Souls are LLM-driven players inside it; they petition a System that is the physics of the world, and the System commits — or refuses — against a gated ledger. The chapters you read are the transcript of committed events, not authored ahead of them. The inline <span class="ooc-inline">[OOC]</span> readouts and the collapsible <em>Engine Log</em> under each chapter read the <em>same</em> committed rows — so the numbers in the prose and the numbers in the audit always match. <a href="about.html">The full method →</a></p>
+  </section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="committed"><span class="committed__sigil">◆</span> Every event on this site was committed by the System before it was written. The dice are honest; the numbers are real; the protagonist can lose — and the reader can check.</p>
+    <p class="foot-meta">Bastion — generated from committed rpg-mcp state. Source of truth: the ledger. <a href="./about.html">How this is made</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

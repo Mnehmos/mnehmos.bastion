@@ -1,0 +1,27 @@
+{
+  "id": "29171068-0b6e-4cf6-b70f-b576918a76c9",
+  "name": "Mnehmos",
+  "race": "Human",
+  "characterClass": "Summoner-Priest",
+  "level": 12,
+  "characterType": "npc",
+  "hp": 88,
+  "maxHp": 88,
+  "ac": 12,
+  "stats": {
+    "str": 10,
+    "dex": 11,
+    "con": 14,
+    "int": 18,
+    "wis": 18,
+    "cha": 17
+  },
+  "origin": {
+    "universe": "Bastion — the last walled city (Sebastopyr)",
+    "native": true
+  },
+  "resourcePools": {},
+  "background": "The Maker of the Order",
+  "behavior": "Calm, deliberate, exact. A builder of systems performing a sacred and morally heavy function with full awareness of its cost. Petitions the System; never overrides it. Carries what he chooses.",
+  "boundSubsystems": []
+}
