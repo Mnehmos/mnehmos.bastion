@@ -7,7 +7,7 @@
 // §6 content/theme formats, §6.4 [OOC] convention) and PUBLISHING.md.
 // docs/ is BUILD OUTPUT — never hand-edited. The build is idempotent.
 
-import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync, rmSync, statSync } from 'fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync, rmSync, statSync, copyFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -408,12 +408,18 @@ function build() {
   // ----- per biography -----
   for (const b of bios) {
     const t = b.theme;
+    // audio: copy source narration mp3s into docs/ and flag which chapters are voiced
+    for (const c of b.chapters) {
+      const src = join(BIO_DIR, b.slug, 'audio', `${c.id}.mp3`);
+      c.hasAudio = existsSync(src);
+      if (c.hasAudio) { const dst = join(DOCS, 'biographies', b.slug, 'audio', `${c.id}.mp3`); mkdirSync(dirname(dst), { recursive: true }); copyFileSync(src, dst); }
+    }
     const chList = b.chapters.map((c, idx) => `<a class="ch-item" href="chapters/${c.id}.html">
       <span class="ch-item__n">${String(idx + 1).padStart(2, '0')}</span>
       <span class="ch-item__body"><span class="ch-item__title">${esc(c.data.title || c.id)}</span>
       <span class="ch-item__when">${esc(c.data.when || '')}</span>
       <span class="ch-item__teaser">${esc(c.data.teaser || '')}</span></span>
-      ${(c.data.convergence && c.data.convergence.length) ? `<span class="ch-item__conv" title="convergence">${t.sigil || '◆'} convergence</span>` : ''}
+      <span class="ch-item__badges">${c.hasAudio ? '<span class="ch-item__audio" title="narrated">▶ listen</span>' : ''}${(c.data.convergence && c.data.convergence.length) ? `<span class="ch-item__conv" title="convergence">${t.sigil || '◆'} convergence</span>` : ''}</span>
     </a>`).join('');
 
     const hero = `
@@ -432,7 +438,7 @@ function build() {
 
     const acts = {};
     for (const c of b.chapters) { const a = c.data.act || 'Chapters'; (acts[a] ||= []).push(c); }
-    const toc = Object.entries(acts).map(([act, cs]) => `<section class="sec"><h2 class="sec__h">${esc(act)}</h2><div class="ch-list">${cs.map((c, i) => `<a class="ch-item" href="chapters/${c.id}.html"><span class="ch-item__n">${String(i + 1).padStart(2, '0')}</span><span class="ch-item__body"><span class="ch-item__title">${esc(c.data.title || c.id)}</span><span class="ch-item__when">${esc(c.data.when || '')}</span><span class="ch-item__teaser">${esc(c.data.teaser || '')}</span></span></a>`).join('')}</div></section>`).join('');
+    const toc = Object.entries(acts).map(([act, cs]) => `<section class="sec"><h2 class="sec__h">${esc(act)}</h2><div class="ch-list">${cs.map((c, i) => `<a class="ch-item" href="chapters/${c.id}.html"><span class="ch-item__n">${String(i + 1).padStart(2, '0')}</span><span class="ch-item__body"><span class="ch-item__title">${esc(c.data.title || c.id)}</span><span class="ch-item__when">${esc(c.data.when || '')}</span><span class="ch-item__teaser">${esc(c.data.teaser || '')}</span></span>${c.hasAudio ? '<span class="ch-item__badges"><span class="ch-item__audio" title="narrated">▶ listen</span></span>' : ''}</a>`).join('')}</div></section>`).join('');
     write(`biographies/${b.slug}/story.html`, layout({ title: `${bioTitle(b)} — chapters`, theme: t, depth: 2, bodyClass: `page-toc bio-${b.slug}`, content: `<section class="hero hero--sub"><p class="hero__kicker">${esc(bioTitle(b))}</p><h1 class="hero__title">Chapters</h1></section>${toc}` }));
 
     b.chapters.forEach((c, idx) => {
@@ -455,6 +461,7 @@ function build() {
           <p class="chapter__when">${esc(c.data.when || '')}</p>
           ${(c.data.tags && c.data.tags.length) ? `<div class="chapter__tags">${c.data.tags.map(x => `<span class="chip">${esc(x)}</span>`).join('')}</div>` : ''}
         </header>
+        ${c.hasAudio ? `<div class="audio"><span class="audio__label">${t.sigil || '◆'} Listen — narrated${t.voice ? ` · ${esc(t.voice)}` : ''}</span><audio controls preload="none"><source src="../audio/${c.id}.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio></div>` : ''}
         ${conv ? `<div class="conv-row">${conv}</div>` : ''}
         <div class="chapter__body">${story}</div>
         ${conv ? `<div class="conv-row conv-row--foot">${conv}</div>` : ''}
@@ -590,7 +597,12 @@ blockquote{margin:0} p{margin:0 0 16px}
 .ch-item__title{font-family:var(--f-display);font-size:1.16rem;font-weight:600}
 .ch-item__when{font-size:.8rem;color:color-mix(in srgb,var(--c-paper) 60%,transparent)}
 .ch-item__teaser{color:color-mix(in srgb,var(--c-paper) 80%,transparent);font-size:.95rem}
-.ch-item__conv{margin-left:auto;font-family:var(--f-mono);font-size:.72rem;color:var(--c-accent);white-space:nowrap}
+.ch-item__badges{margin-left:auto;display:flex;gap:8px;align-items:center;white-space:nowrap}
+.ch-item__conv{font-family:var(--f-mono);font-size:.72rem;color:var(--c-accent);white-space:nowrap}
+.ch-item__audio{font-family:var(--f-mono);font-size:.72rem;color:var(--c-accent);border:1px solid var(--c-line);border-radius:999px;padding:1px 8px}
+.audio{display:flex;flex-direction:column;gap:9px;margin:6px 0 24px;padding:14px 16px;border:1px solid var(--c-accent);border-radius:12px;background:color-mix(in srgb,var(--c-accent) 8%,transparent)}
+.audio__label{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.08em;font-size:.74rem;color:var(--c-accent)}
+.audio audio{width:100%;height:40px;border-radius:8px}
 
 .chapter{max-width:760px;margin:30px auto 0}
 .chapter__head{margin-bottom:22px;border-bottom:1px solid var(--c-line);padding-bottom:20px}
