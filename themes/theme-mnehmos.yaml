@@ -1,0 +1,20 @@
+# Theme: Mnehmos (stub)
+# The summoner-priest / devlog surface. Real spec: bastion-website-spec.md §4, §6.3.
+name: Mnehmos
+source_world: "Sebastopyr — the last city, the cathedral"
+palette:
+  night:  "#0a0a0c"
+  paper:  "#efe7d3"
+  accent: "#b89a4a"   # ritual-gold
+  stone:  "#5a5a60"
+  line:   "rgba(184,154,74,.28)"
+type:
+  display: "Cormorant Garamond"
+  serif:   "Newsreader"
+  mono:    "JetBrains Mono"
+motif: "rite-glyphs"
+sigil: "✦"
+voice: "sage"   # OpenAI TTS voice
+voice_notes: |
+  Liturgical cadence with engineering precision underneath — the priest who
+  is also the maker. Toggleable between in-fiction and engineering register.

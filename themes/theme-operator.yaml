@@ -1,0 +1,20 @@
+# Theme: The Operator (stub)
+# Industrial / desert / load-bearing skin. Real spec: bastion-website-spec.md §6.3.
+name: The Operator
+source_world: "contemporary Earth — an Arizona copper mine"
+palette:
+  night:  "#0d0f10"
+  paper:  "#e8e4dc"
+  accent: "#d4711c"   # hazard-amber
+  metal:  "#8a8f93"
+  line:   "rgba(212,113,28,.25)"
+type:
+  display: "Oswald"
+  serif:   "Newsreader"
+  mono:    "JetBrains Mono"
+motif: "load-lines"
+sigil: "▣"
+voice: "onyx"   # OpenAI TTS voice
+voice_notes: |
+  Narrator-only register. Plainspoken, no theatrics. The Operator's interior
+  reads as someone who measures things before he speaks.
