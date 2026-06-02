@@ -1,0 +1,29 @@
+{
+  "id": "0484a58a-b10d-473e-ba32-4d2d43eccc92",
+  "name": "Yuki Aritomo",
+  "race": "Human",
+  "characterClass": "Surveyor",
+  "level": 1,
+  "characterType": "pc",
+  "hp": 8,
+  "maxHp": 8,
+  "ac": 11,
+  "stats": {
+    "str": 10,
+    "dex": 13,
+    "con": 11,
+    "int": 16,
+    "wis": 14,
+    "cha": 11
+  },
+  "origin": {
+    "universe": "Contemporary Earth — a rain-soaked survey expedition",
+    "native": false,
+    "arrivedAt": "PD 606",
+    "arrivedInCohortId": "c0407606-0606-4606-8606-000000000606"
+  },
+  "resourcePools": {},
+  "background": "Surveyor — taken mid-grid-lay; rain-dark outer layer came with her",
+  "behavior": "Reserved. Precise. Internal monologue runs numerical. Speaks rarely. Cold-load active hazard; wet fabric remains heat-loss vector.",
+  "boundSubsystems": []
+}

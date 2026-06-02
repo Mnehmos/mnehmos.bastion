@@ -1,0 +1,29 @@
+{
+  "id": "9a666716-ff67-4864-b39b-afb49ae2a6eb",
+  "name": "Wren Adebayo",
+  "race": "Human",
+  "characterClass": "Quartermaster",
+  "level": 1,
+  "characterType": "pc",
+  "hp": 9,
+  "maxHp": 9,
+  "ac": 11,
+  "stats": {
+    "str": 11,
+    "dex": 12,
+    "con": 12,
+    "int": 13,
+    "wis": 14,
+    "cha": 16
+  },
+  "origin": {
+    "universe": "Contemporary Earth — a bread-line in crisis",
+    "native": false,
+    "arrivedAt": "PD 606",
+    "arrivedInCohortId": "c0407606-0606-4606-8606-000000000606"
+  },
+  "resourcePools": {},
+  "background": "Quartermaster — taken mid bread-line work; flour-dust on one cuff, half-corner roster still in her palm",
+  "behavior": "Pragmatic. Calm. Counts a room before she trusts it. Does not move forward until headcount resolves.",
+  "boundSubsystems": []
+}

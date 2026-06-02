@@ -1,0 +1,20 @@
+# Theme: Yuki Aritomo (Surveyor)
+# Cohort biography — instrument register, position-fix discipline.
+name: Yuki Aritomo
+source_world: "Contemporary Earth — a rain-soaked survey expedition (origin unspecified)"
+palette:
+  night:  "#0a0c10"
+  paper:  "#e6e8ec"
+  accent: "#3a6f8a"   # rain-blue
+  metal:  "#7a8088"
+  line:   "rgba(58,111,138,.28)"
+type:
+  display: "IBM Plex Sans"
+  serif:   "Newsreader"
+  mono:    "JetBrains Mono"
+motif: "grid-marks"
+sigil: "◉"
+voice: "shimmer"   # OpenAI TTS voice
+voice_notes: |
+  Reserved. Precise. Internal monologue runs numerical. Speaks rarely;
+  when she does, the sentences are short and exact.

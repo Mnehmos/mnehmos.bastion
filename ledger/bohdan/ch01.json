@@ -1,0 +1,87 @@
+{
+  "biography": "bohdan",
+  "chapter": "ch01-one-knee",
+  "title": "One Knee",
+  "world": { "id": "33e0a378-0278-41ea-bd7a-1645b914a777", "name": "Sebastopyr", "pd": "606" },
+  "convergence": "arrival-first-window",
+  "convergesWith": ["operator/ch02-read-the-plate", "mnehmos/ch01-an-address", "mnehmos/ch02-the-descent"],
+  "anchor_canonical_moment": "ba96fe9b-21a0-4672-82c8-fb8cfd8ab3d8",
+  "scene_ref": { "kind": "room", "roomId": "62ff2dd0-57af-4a9f-8207-695ef77b70f4", "name": "Vocation House Inner Chamber" },
+  "note": "Bohdan's interior. His body goes to one knee before his mind decides. Palm flat to limestone. He reads joint/seam/bearing/crack. The slab is sound (~600 solar years, high-Gothic Moravian technique — impossible and possible). The mortar has an unknown mineral additive. The brass nail-line bears RESIDUAL THERMAL + UNCATEGORIZED FORCE; engine refuses to name what. Stays on one knee through chapter end.",
+  "protagonist": {
+    "id": "a48d4834-0766-4559-83cd-b9f9f4fed28e",
+    "name": "Bohdan Cerny",
+    "character_class": "Mason",
+    "level": 1,
+    "hp": "12/12",
+    "ac": 12,
+    "stats": { "str": 15, "dex": 11, "con": 15, "int": 12, "wis": 12, "cha": 10 },
+    "origin": { "universe": "Contemporary Earth — a wall mid-repointing", "arrivedAt": "PD 606" }
+  },
+  "litRPG_surface": "Bohdan's OOC blocks render as :::structurebox (load-bearing audit), :::statbox (sheet + tool inventory), :::action (STRUCTURE_QUERY verbs), :::systemvoice (⟦ ⟧ engine returns).",
+  "events": [
+    {
+      "ts": "PD 606 · 0001 + ~0:00",
+      "kind": "physical_reflex",
+      "actor": "a48d4834 (Bohdan)",
+      "action": "left_knee_down_right_palm_flat",
+      "trigger": "slab rang faintly under boot-heel like a header whispering when a joist lets go two floors above",
+      "note": "Body went down before mind decided. Stays in this posture through chapter end."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:00",
+      "kind": "system_query",
+      "petition": "what am I now",
+      "returned": "MASON · L1 · HP 12/12 · AC 12 · STR 15 DEX 11 CON 15 INT 12 WIS 12 CHA 10"
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:01",
+      "kind": "structure_query",
+      "petition": "this floor",
+      "returned": "LIMESTONE VENEER OVER GRANITE BASE · KEYSTONE-ALIGNED COURSING · AGE ~600 SOLAR · MORTAR MATRIX CaCO₃-SiO₂-UNKNOWN MINERAL ADDITIVE · CONDITION SOUND · INTEGRITY 97%",
+      "bohdan_observation": "Tooling marks line up to high-Gothic Moravia — impossible, unless stone chose to lie about its passport. Stone under load does not lie."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:02",
+      "kind": "structure_query",
+      "petition": "brass nail-line, load axis",
+      "returned": "BRASS NAIL-LINE · ORIENTATION: KEYSTONE ALIGNED · CURRENT BEARING: RESIDUAL THERMAL + UNCATEGORIZED FORCE · TEMPERATURE GRADIENT: +45 K ABOVE FLOOR MEAN",
+      "note": "Engine REFUSED to categorize the brass's bearing. Honest return preserved. Convergence with Cole's perception fire (which returned similar UNCATEGORIZED PRESSURE) and Yuki's surveyor read (warmer than surrounding floor)."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:03",
+      "kind": "external_observation",
+      "actor_heard": "4388bdee (Cole) — heard but not yet named",
+      "spoken": "Everybody off the brass line.",
+      "bohdan_reaction": "Not surprise. Recognition. 'Another man has read the same thing you are reading. With different equipment.'"
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:04",
+      "kind": "withholding",
+      "topic": "rising",
+      "note": "Bohdan does not rise in this chapter. He stays on one knee, palm to stone. The chapter in the rock is not finished writing itself yet."
+    }
+  ],
+  "ledger_state_at_chapter_end": {
+    "bohdan_hp": "12/12",
+    "bohdan_ac": 12,
+    "bohdan_xp": 0,
+    "bohdan_conditions": "none",
+    "bohdan_posture": "one knee, right palm flat to limestone",
+    "structure_audit_logged": "limestone-over-granite raft; brass bears uncategorized force; recommendation: isolate line until load dump confirmed; monitor for nail walk + joint shear",
+    "convergence_validated": "Three independent reads of the brass nail-line (Cole's perception, Yuki's surveyor eye, Bohdan's palm) all returned the same: residual thermal + uncategorized force. The engine refused to name what across all three lenses."
+  },
+  "agent_calls": [
+    {
+      "id": "dcbe2e03-d0ea-45dd-bef5-2d3afc482f3d",
+      "beat": "arrival — one knee — read the lay — read the brass",
+      "provider": "openai",
+      "model": "gpt-5.5",
+      "reasoning_effort": "high",
+      "prompt_tokens": 2199,
+      "completion_tokens": 1860,
+      "duration_ms": 32127,
+      "status": "ok"
+    }
+  ]
+}

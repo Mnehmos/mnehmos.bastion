@@ -1,0 +1,20 @@
+# Theme: Bohdan Cerny (Mason)
+# Cohort biography — masonry register, palm-to-stone discipline.
+name: Bohdan Cerny
+source_world: "Contemporary Earth — a wall mid-repointing (origin unspecified)"
+palette:
+  night:  "#0c0c0d"
+  paper:  "#e8e2d6"
+  accent: "#8a6a3a"   # mortar-bronze
+  stone:  "#666660"
+  line:   "rgba(138,106,58,.28)"
+type:
+  display: "Crimson Pro"
+  serif:   "Newsreader"
+  mono:    "JetBrains Mono"
+motif: "course-lines"
+sigil: "▤"
+voice: "echo"   # OpenAI TTS voice
+voice_notes: |
+  Terse. Physical metaphors from masonry. Thinks in surfaces and forces.
+  Stone under load does not lie.

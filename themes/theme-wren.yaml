@@ -1,0 +1,20 @@
+# Theme: Wren Adebayo (Quartermaster)
+# Cohort biography — count-and-roster register, sightlines discipline.
+name: Wren Adebayo
+source_world: "Contemporary Earth — a bread-line in crisis (origin unspecified)"
+palette:
+  night:  "#0a0c0d"
+  paper:  "#ede8d8"
+  accent: "#6a8a4a"   # flour-green
+  metal:  "#888878"
+  line:   "rgba(106,138,74,.28)"
+type:
+  display: "Source Sans Pro"
+  serif:   "Newsreader"
+  mono:    "JetBrains Mono"
+motif: "tally-marks"
+sigil: "𝍩"
+voice: "nova"   # OpenAI TTS voice
+voice_notes: |
+  Pragmatic. Calm. The cadence of someone who has held a line in a crisis
+  and knows it does not stay a line by accident.

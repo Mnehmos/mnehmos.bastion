@@ -1,0 +1,103 @@
+{
+  "biography": "renata",
+  "chapter": "ch01-triage-before-geography",
+  "title": "Triage Before Geography",
+  "world": { "id": "33e0a378-0278-41ea-bd7a-1645b914a777", "name": "Sebastopyr", "pd": "606" },
+  "convergence": "arrival-first-window",
+  "convergesWith": ["operator/ch02-read-the-plate", "mnehmos/ch01-an-address", "mnehmos/ch02-the-descent"],
+  "anchor_canonical_moment": "ba96fe9b-21a0-4672-82c8-fb8cfd8ab3d8",
+  "scene_ref": { "kind": "room", "roomId": "62ff2dd0-57af-4a9f-8207-695ef77b70f4", "name": "Vocation House Inner Chamber" },
+  "note": "Renata's interior of the same first 3-5 minutes Cole and Mnehmos render from their interiors. She arrives with her arm still up from the surgical room, scans the cohort by hazard not identity, queries her own sheet, hears Cole's 'off the brass line' as meaning-without-speaker, and gives the wet-clothed surveyor one professional sentence directing her toward the lamp ring. No touch without consent.",
+  "protagonist": {
+    "id": "ba5b08f1-7b94-4488-a0fd-628936cf9495",
+    "name": "Renata Salk",
+    "character_class": "Field Surgeon",
+    "level": 1,
+    "hp": "9/9",
+    "ac": 11,
+    "stats": { "str": 10, "dex": 14, "con": 12, "int": 15, "wis": 15, "cha": 11 },
+    "origin": { "universe": "Contemporary Earth — a trauma surgical room", "arrivedAt": "PD 606" }
+  },
+  "litRPG_surface": "Renata's OOC blocks render as :::triagebox (per-soul medical roster with stable/watch/urgent/black tags), :::statbox (sheet, consent ledger, glove status), :::action (verb+target+cost+return), :::systemvoice (⟦ ⟧ engine returns in CAPS).",
+  "events": [
+    {
+      "ts": "PD 606 · 0001 + ~0:00",
+      "kind": "physical_reflex",
+      "actor": "ba5b08f1 (Renata)",
+      "action": "arm_remained_raised",
+      "note": "She arrives with her arm still in the gloved-and-ready posture from the surgical room. She does not lower it until the triage cycle completes."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:00",
+      "kind": "triage_scan",
+      "actor": "ba5b08f1 (Renata)",
+      "targets": ["wet-clothed surveyor", "heavy-equipment man", "mason on one knee", "sightlines woman"],
+      "returns": {
+        "wet-clothed surveyor": "watch — wet-fabric exposure load; no visible hemorrhage",
+        "heavy-equipment man": "stable — floor-balance compensation; no visible acute injury",
+        "mason on one knee": "stable — no visible acute limb hazard; reading slab",
+        "sightlines woman": "stable — no visible acute injury; dust exposure only"
+      },
+      "note": "Surface only. No names known. No interiors."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:00",
+      "kind": "system_query",
+      "petition": "perception_limits / knowledge_boundaries",
+      "returned": "LIMITS CONFIRMED: motive not readable; allegiance forecast refused; non-physical emergents not accessible; soul-interiors not visible; language bridge provisional",
+      "note": "Honest engine return. Renata's response: 'Good. The engine wouldn't let me romanticize.'"
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:02",
+      "kind": "system_query",
+      "petition": "what am I now",
+      "returned": "FIELD SURGEON SHEET — L1 human surgeon. NO SPELL SLOTS. Hands and training only. HP 9/9 AC 11. Consent floor active.",
+      "note": "Plain sheet readout. No magic granted. The discipline she brought is the discipline she has."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:04",
+      "kind": "external_observation",
+      "actor": "4388bdee (Cole) — heard but not yet named",
+      "action": "verbal_directive",
+      "petition": "Everybody off the brass line.",
+      "renata_reaction": "Recognized meaning. Not speaker. Directive landed like a scalpel.",
+      "note": "Convergence with operator/ch02-read-the-plate."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:04",
+      "kind": "verbal_directive",
+      "actor": "ba5b08f1 (Renata)",
+      "target": "0484a58a (Yuki) — heard but not yet named",
+      "spoken": "You. Wet cloth — move toward the lamp ring. Keep your feet off the brass.",
+      "note": "Professional, short. Did NOT touch. Honored the consent floor."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:05",
+      "kind": "completion",
+      "action": "arm_lowered_palm_inward",
+      "note": "Triage cycle complete. Sheet verified. Voice applied. No one bled out in the first minute. 'That's not luck. That's procedure.'"
+    }
+  ],
+  "ledger_state_at_chapter_end": {
+    "renata_hp": "9/9",
+    "renata_ac": 11,
+    "renata_xp": 0,
+    "renata_conditions": "none",
+    "renata_consent_ledger": "clean (no contact made)",
+    "triage_roster_after_first_minute": "all stable/watch; no hemorrhage observed",
+    "engine_limits_acknowledged": "no motive read; no allegiance forecast; non-physical emergents inaccessible"
+  },
+  "agent_calls": [
+    {
+      "id": "2d8cd44e-2796-4430-a2f4-04a46b07713c",
+      "beat": "arrival — triage — sheet — voice",
+      "provider": "openai",
+      "model": "gpt-5.5",
+      "reasoning_effort": "high",
+      "prompt_tokens": 2146,
+      "completion_tokens": 3023,
+      "duration_ms": 18090,
+      "status": "ok"
+    }
+  ]
+}

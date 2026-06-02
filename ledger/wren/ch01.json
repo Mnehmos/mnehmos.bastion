@@ -1,0 +1,111 @@
+{
+  "biography": "wren",
+  "chapter": "ch01-the-slate",
+  "title": "The Slate",
+  "world": { "id": "33e0a378-0278-41ea-bd7a-1645b914a777", "name": "Sebastopyr", "pd": "606" },
+  "convergence": "arrival-first-window",
+  "convergesWith": ["operator/ch02-read-the-plate", "mnehmos/ch01-an-address", "mnehmos/ch02-the-descent"],
+  "anchor_canonical_moment": "ba96fe9b-21a0-4672-82c8-fb8cfd8ab3d8",
+  "scene_ref": { "kind": "room", "roomId": "62ff2dd0-57af-4a9f-8207-695ef77b70f4", "name": "Vocation House Inner Chamber" },
+  "note": "Wren's interior. She arrives; within seconds she has re-positioned 1.5m laterally to the angle from which she can see the dais, the doors, the cohort, and the personnel simultaneously. Count resolves: 5 cohort + 24 summoners + 2 dais figures = 31 souls in sight; attendant in scene-memory but not in tally. Two tremor-handed summoners flagged WATCH. An attendant places a stone slate within her sightline; she does not pick it up. Mnehmos begins his descent.",
+  "protagonist": {
+    "id": "9a666716-ff67-4864-b39b-afb49ae2a6eb",
+    "name": "Wren Adebayo",
+    "character_class": "Quartermaster",
+    "level": 1,
+    "hp": "9/9",
+    "ac": 11,
+    "stats": { "str": 11, "dex": 12, "con": 12, "int": 13, "wis": 14, "cha": 16 },
+    "origin": { "universe": "Contemporary Earth — a bread-line in crisis", "arrivedAt": "PD 606" }
+  },
+  "litRPG_surface": "Wren's OOC blocks render as :::rosterbox (her count of the room with status), :::sightlines (what she can see / cannot see from chosen angle), :::statbox (sheet), :::action (verb-target-cost-return), :::systemvoice (⟦ ⟧ engine returns).",
+  "events": [
+    {
+      "ts": "PD 606 · 0001 + ~0:00",
+      "kind": "physical_reflex",
+      "actor": "9a666716 (Wren)",
+      "action": "lateral_reposition_1_5m",
+      "note": "She steps to the angle from which she can see the dais (1), the east door (2), the cohort (4 others + self = 5), the summoner ring (24), and any chamber-lighting change simultaneously. Not aggressive. Located."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:01",
+      "kind": "observation",
+      "actor": "9a666716 (Wren)",
+      "observed": ["large east door", "smaller door behind dais obscured by drapery", "NW side passage with different airflow"],
+      "note": "Three exits / passages catalogued by sight."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:01",
+      "kind": "observation_flag",
+      "actor": "9a666716 (Wren)",
+      "observed": "2 of 24 robed summoners have hand-tremor",
+      "tag": "WATCH (not URGENT)",
+      "note": "System refuses to explain. Wren notes that the instrument-bearing woman beside the officiant has begun moving toward them."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:02",
+      "kind": "system_query",
+      "petition": "what am I now",
+      "returned": "HUMAN QUARTERMASTER · L1 · HP 9/9 · AC 11 · STR 11 DEX 12 CON 12 INT 13 WIS 14 CHA 16 · Inventory: half-corner roster (paper), flour-dust cuff, no weapon, no slate, no counting-stick"
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:02",
+      "kind": "count_resolved",
+      "tally": "5 cohort + 24 summoners + 2 dais figures = 31 souls in sight",
+      "note": "Attendant present in scene-memory but not in tally — Wren keeps that separation intact."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:03",
+      "kind": "first_speech",
+      "actor": "9a666716 (Wren)",
+      "spoken": "Thirty-one in sight.",
+      "audience": "herself; not the room",
+      "note": "Confirms the count aloud as discipline."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:04",
+      "kind": "object_introduction",
+      "actor": "attendant (chamber personnel)",
+      "action": "places stone slate on ledge within Wren's sightline",
+      "wren_response": "Accepts the presence; does NOT pick it up. 'Like a tool, not a gift.'"
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:04",
+      "kind": "external_observation",
+      "actor_heard": "4388bdee (Cole) — heard but not yet named",
+      "spoken": "Everybody off the brass line.",
+      "wren_reaction": "Information to fold into the count. Not an order to obey."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:05",
+      "kind": "external_observation",
+      "actor_observed": "29171068 (Mnehmos) — observed but not yet named",
+      "action": "begins descent of seven dais steps",
+      "wren_reaction": "Chamber's attention rotates toward him. Wren remains in her chosen angle."
+    }
+  ],
+  "ledger_state_at_chapter_end": {
+    "wren_hp": "9/9",
+    "wren_ac": 11,
+    "wren_xp": 0,
+    "wren_conditions": "none",
+    "wren_position": "+1.5m lateral from arrival point, chosen vantage",
+    "wren_count_resolved": "31 souls in sight + 1 attendant in scene-memory",
+    "watch_flags": "2 tremor-handed summoners",
+    "object_state": "stone slate placed on ledge within sightline; status placed-not-picked-up"
+  },
+  "agent_calls": [
+    {
+      "id": "be030ee5-ee61-41d9-af64-b4310cbdaa2f",
+      "beat": "arrival — re-position — count — the slate",
+      "provider": "openai",
+      "model": "gpt-5.5",
+      "reasoning_effort": "high",
+      "prompt_tokens": 2288,
+      "completion_tokens": 10100,
+      "duration_ms": 63465,
+      "status": "ok",
+      "editorial_note": "Agent draft included trailing meta-commentary block (CANON CONSTRAINTS: / LENGTH: / Notes on style:) — clearly an artifact of the agent reciting back its directive at chapter end. The System (orchestrator) stripped that block. The :::bubble blocks lacked who= attribution, which was added. The prose's three-movement spine, the count math, the sightlines audit, the slate-as-tool-not-gift moment, and the convergence cues with Cole and Mnehmos were preserved verbatim. Some redundant paragraphs were lightly tightened to match the register of Yuki's and Renata's chapters."
+    }
+  ]
+}

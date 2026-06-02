@@ -1,0 +1,29 @@
+{
+  "id": "ba5b08f1-7b94-4488-a0fd-628936cf9495",
+  "name": "Renata Salk",
+  "race": "Human",
+  "characterClass": "Field Surgeon",
+  "level": 1,
+  "characterType": "pc",
+  "hp": 9,
+  "maxHp": 9,
+  "ac": 11,
+  "stats": {
+    "str": 10,
+    "dex": 14,
+    "con": 12,
+    "int": 15,
+    "wis": 15,
+    "cha": 11
+  },
+  "origin": {
+    "universe": "Contemporary Earth — a trauma surgical room",
+    "native": false,
+    "arrivedAt": "PD 606",
+    "arrivedInCohortId": "c0407606-0606-4606-8606-000000000606"
+  },
+  "resourcePools": {},
+  "background": "Field Surgeon — taken mid-triage, arm raised palm-up",
+  "behavior": "Economical, clinical, correct. Reads a room as a triage roster. Sentimentality kills more reliably than blood. Will not touch without explicit consent.",
+  "boundSubsystems": []
+}

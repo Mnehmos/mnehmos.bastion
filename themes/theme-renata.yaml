@@ -1,0 +1,20 @@
+# Theme: Renata Salk (Field Surgeon)
+# Cohort biography — surgical-room register, triage discipline.
+name: Renata Salk
+source_world: "Contemporary Earth — a trauma surgical room (origin unspecified)"
+palette:
+  night:  "#0c0e10"
+  paper:  "#ece8e0"
+  accent: "#a83943"   # arterial
+  metal:  "#9aa2a8"
+  line:   "rgba(168,57,67,.25)"
+type:
+  display: "Inter"
+  serif:   "Newsreader"
+  mono:    "JetBrains Mono"
+motif: "triage-tags"
+sigil: "✚"
+voice: "alloy"   # OpenAI TTS voice
+voice_notes: |
+  Economical, clinical, correct. Not warm; not cruel. Reads a room as a
+  triage roster. Short sentences when work is happening.

@@ -1,0 +1,29 @@
+{
+  "id": "a48d4834-0766-4559-83cd-b9f9f4fed28e",
+  "name": "Bohdan Cerny",
+  "race": "Human",
+  "characterClass": "Mason",
+  "level": 1,
+  "characterType": "pc",
+  "hp": 12,
+  "maxHp": 12,
+  "ac": 12,
+  "stats": {
+    "str": 15,
+    "dex": 11,
+    "con": 15,
+    "int": 12,
+    "wis": 12,
+    "cha": 10
+  },
+  "origin": {
+    "universe": "Contemporary Earth — a wall mid-repointing",
+    "native": false,
+    "arrivedAt": "PD 606",
+    "arrivedInCohortId": "c0407606-0606-4606-8606-000000000606"
+  },
+  "resourcePools": {},
+  "background": "Mason — taken mid-repointing; lime still on his hands",
+  "behavior": "Terse. Reads stone with palm, knee, joint of thumb. Speaks less than he thinks. Stone under load does not lie.",
+  "boundSubsystems": []
+}
