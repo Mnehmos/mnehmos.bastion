@@ -12,12 +12,12 @@
   "deferrals": [
     { "scene": "Scene 2 The Rooms", "cost_offered": "first reckoning with roster fragment", "outcome": "slate stayed blank", "xp": 0 },
     { "scene": "Scene 3 The Tug", "cost_offered": "answer Mnehmos's grain offer through the door", "outcome": "wrote a mark; did not name", "xp": 0 },
-    { "scene": "Scene 5 First Light", "cost_offered": "acknowledge Severa reading the three names aloud", "outcome": "stayed silent", "xp": +5 }
+    { "scene": "Scene 5 First Light", "cost_offered": "acknowledge Severa reading the three names aloud", "outcome": "stayed silent", "xp": 5 }
   ],
   "reckoning_chain": [
-    { "ts": "09:33", "action": "dispatched grain from inner depot to Halis Gate, cut noon redistribution 33%", "xp": +25 },
-    { "ts": "09:34", "action": "allocated 2 cots to hospital immediate, backfill from east wing at light", "xp": +25 },
-    { "ts": "12:30", "action": "read the three names aloud when the runner brought them back; wrote them on the slate with YES underlined twice", "xp": +50 }
+    { "ts": "09:33", "action": "dispatched grain from inner depot to Halis Gate, cut noon redistribution 33%", "xp": 25 },
+    { "ts": "09:34", "action": "allocated 2 cots to hospital immediate, backfill from east wing at light", "xp": 25 },
+    { "ts": "12:30", "action": "read the three names aloud when the runner brought them back; wrote them on the slate with YES underlined twice", "xp": 50 }
   ],
   "level_up_event": {
     "trigger": "first reckoning paid + cumulative XP threshold",
