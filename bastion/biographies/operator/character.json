@@ -22,16 +22,8 @@
     "arrivedAt": "PD 606",
     "arrivedInCohortId": "c0407606-0606-4606-8606-000000000606"
   },
-  "resourcePools": {
-    "attentional_capacity": {
-      "current": 2,
-      "max": 3,
-      "lastRefilledAt": "2026-06-02T14:56:50.355Z"
-    }
-  },
+  "resourcePools": {},
   "background": "Heavy-Equipment Operator (Morenci Copper Mine, Arizona)",
   "behavior": "Competent, dry, not easily rattled, allergic to bullshit. Reads a situation for the load-bearing hazard before he acts. Respects lethal physics; games systems for the pleasure of it. Petitions the System; never authors his own outcomes.",
-  "boundSubsystems": [
-    "constraint-perception"
-  ]
+  "boundSubsystems": []
 }

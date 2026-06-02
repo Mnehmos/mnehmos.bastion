@@ -290,6 +290,20 @@ function renderEngineLog(ledger) {
       <div class="elog__sec"><h5>Committed arrivals</h5><ul>${arr}</ul></div>
       ${named ? `<div class="elog__sec"><h5>Named in the rite, not yet instanced</h5><ul>${named}</ul></div>` : ''}</div>`);
   }
+  if (ledger.registration) {
+    const r = ledger.registration;
+    parts.push(`<div class="elog__row"><div class="elog__h">${esc(r.event)} <span class="elog__hash">PD ${esc(r.pd || '')}</span></div><p>${esc(r.soul)} — Level ${r.level}. The soul enters the ledger.</p></div>`);
+  }
+  if (ledger.fabrication) {
+    const f = ledger.fabrication;
+    const it = f.committedItem;
+    parts.push(`<div class="elog__row">
+      <div class="elog__h">fabrication · ${esc(f.mechanic)} · <span class="conf conf--${esc(f.result)}">${esc(f.result)}</span> <span class="elog__hash">${esc(f.skill)}${f.advantage ? ' (adv)' : ''} · rolled [${(f.rolls || []).join(', ')}] → ${f.total} vs DC ${f.dc}</span></div>
+      ${f.intent ? `<p class="muted">${esc(f.intent)}</p>` : ''}
+      ${it ? `<div class="elog__sec"><h5>Committed item</h5><ul><li><b>${esc(it.name)}</b> — ${esc(it.type)} · <span class="muted">${esc((it.properties && it.properties.anomaly) || '')}</span> <span class="elog__hash">${esc((it.id || '').slice(0, 8))}…</span></li></ul></div>` : ''}
+      ${f.note ? `<div class="elog__sec"><h5>Noted</h5><p>${esc(f.note)}</p></div>` : ''}
+    </div>`);
+  }
   if (ledger.agent_calls) {
     const rows = ledger.agent_calls.map(c => `<tr><td>${esc((c.id || '').slice(0, 8))}</td><td>${esc(c.model)}</td><td>${esc(c.reasoning_effort || '')}</td><td>${c.prompt_tokens ?? '—'}/${c.completion_tokens ?? '—'}</td><td class="conf conf--${esc(c.status)}">${esc(c.status)}</td></tr>`).join('');
     parts.push(`<div class="elog__row"><div class="elog__h">agent calls (LLM audit)</div><table class="elog__tbl"><thead><tr><th>call</th><th>model</th><th>effort</th><th>tok in/out</th><th>status</th></tr></thead><tbody>${rows}</tbody></table></div>`);
@@ -649,7 +663,7 @@ blockquote{margin:0} p{margin:0 0 16px}
 .elog__tbl{width:100%;border-collapse:collapse;font-size:.78rem} .elog__tbl th,.elog__tbl td{text-align:left;padding:4px 8px;border-bottom:1px solid var(--c-line)}
 .elog__raw{margin-top:12px} .elog__raw pre{overflow:auto;max-height:340px;background:var(--c-night);padding:12px;border-radius:8px;font-size:.74rem;border:1px solid var(--c-line)}
 .conf{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;padding:1px 7px;border-radius:999px;border:1px solid currentColor}
-.conf--commit,.conf--ok,.conf--high{color:#5cba6b} .conf--partial{color:var(--c-accent)} .conf--unknown,.conf--error,.conf--reject_inert{color:#cf6a5a}
+.conf--commit,.conf--ok,.conf--high,.conf--success{color:#5cba6b} .conf--partial{color:var(--c-accent)} .conf--unknown,.conf--error,.conf--reject_inert,.conf--failure{color:#cf6a5a}
 
 .ch-nav{display:flex;justify-content:space-between;gap:12px;margin:30px 0 0;padding-top:18px;border-top:1px solid var(--c-line);font-family:var(--f-display);font-size:.86rem}
 .ch-nav__toc{color:color-mix(in srgb,var(--c-paper) 65%,transparent)}

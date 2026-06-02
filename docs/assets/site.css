@@ -151,7 +151,7 @@ blockquote{margin:0} p{margin:0 0 16px}
 .elog__tbl{width:100%;border-collapse:collapse;font-size:.78rem} .elog__tbl th,.elog__tbl td{text-align:left;padding:4px 8px;border-bottom:1px solid var(--c-line)}
 .elog__raw{margin-top:12px} .elog__raw pre{overflow:auto;max-height:340px;background:var(--c-night);padding:12px;border-radius:8px;font-size:.74rem;border:1px solid var(--c-line)}
 .conf{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;padding:1px 7px;border-radius:999px;border:1px solid currentColor}
-.conf--commit,.conf--ok,.conf--high{color:#5cba6b} .conf--partial{color:var(--c-accent)} .conf--unknown,.conf--error,.conf--reject_inert{color:#cf6a5a}
+.conf--commit,.conf--ok,.conf--high,.conf--success{color:#5cba6b} .conf--partial{color:var(--c-accent)} .conf--unknown,.conf--error,.conf--reject_inert,.conf--failure{color:#cf6a5a}
 
 .ch-nav{display:flex;justify-content:space-between;gap:12px;margin:30px 0 0;padding-top:18px;border-top:1px solid var(--c-line);font-family:var(--f-display);font-size:.86rem}
 .ch-nav__toc{color:color-mix(in srgb,var(--c-paper) 65%,transparent)}
