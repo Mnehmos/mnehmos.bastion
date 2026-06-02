@@ -5,7 +5,7 @@
   "world": { "id": "33e0a378-0278-41ea-bd7a-1645b914a777", "name": "Sebastopyr", "pd": "606" },
   "convergence": "ch1-the-first-rite",
   "convergesWith": "operator/ch01-cold-start",
-  "note": "The ceremony is the commit; the liturgy is the changelog. The rows below are what the rite committed.",
+  "note": "The ceremony is the commit; the liturgy is the changelog. The rows below are what the rite committed. Chapter prose was reshot once (see agent_calls: the published text is the gpt-5.5 high-reasoning reshoot, which surfaces System ⟦ ⟧ readouts in-scene and renders Cole's Morenci accurately; the prior pass remains in the agent journal for replay).",
   "officiant": {
     "id": "29171068-0b6e-4cf6-b70f-b576918a76c9",
     "name": "Mnehmos",
@@ -27,8 +27,9 @@
     ]
   },
   "agent_calls": [
-    { "id": "b525617b-74c9-4bb2-91e3-2b6c3616d7ce", "beat": "the choosing", "provider": "openai", "model": "gpt-5.4", "reasoning_effort": "high", "prompt_tokens": 2048, "completion_tokens": 4049, "status": "ok" },
-    { "id": "6a5f645b-a12f-4483-b7ee-4c0c699c19b6", "beat": "the rite", "provider": "openai", "model": "gpt-5.4", "reasoning_effort": "high", "prompt_tokens": 1871, "completion_tokens": 1975, "status": "ok" }
+    { "id": "b525617b-74c9-4bb2-91e3-2b6c3616d7ce", "beat": "the choosing (v1, archived)", "provider": "openai", "model": "gpt-5.4", "reasoning_effort": "high", "prompt_tokens": 2048, "completion_tokens": 4049, "status": "ok" },
+    { "id": "6a5f645b-a12f-4483-b7ee-4c0c699c19b6", "beat": "the rite (v1, archived)", "provider": "openai", "model": "gpt-5.4", "reasoning_effort": "high", "prompt_tokens": 1871, "completion_tokens": 1975, "status": "ok" },
+    { "id": "49bdddbb-587a-49d0-8848-e35b89e4918b", "beat": "the choosing + the rite + the silence after (v2, reshoot — published)", "provider": "openai", "model": "gpt-5.5", "reasoning_effort": "high", "prompt_tokens": 2485, "completion_tokens": 8294, "duration_ms": 159437, "status": "ok", "directive": "System speaks in ⟦ ⟧ readouts in-scene; render Cole's Morenci open-pit + Komatsu 930E + dented mug + 'TOUCH NOTHING YOU HAVEN'T LOOKED AT TWICE' rule accurately; preserve canon lines (decision is clean / incur continuation)" }
   ],
   "canonical_moment": "904ca6f3-410d-4655-82b8-5f1c97921b79"
 }
