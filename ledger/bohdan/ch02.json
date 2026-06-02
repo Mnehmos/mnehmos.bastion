@@ -1,0 +1,40 @@
+{
+  "biography": "bohdan",
+  "chapter": "ch02-vas-halidani",
+  "title": "Vas Halidani",
+  "world": { "id": "33e0a378-0278-41ea-bd7a-1645b914a777", "name": "Sebastopyr", "pd": "606" },
+  "convergence": "post-rite-first-hour-address",
+  "convergesWith": ["operator/ch02-read-the-plate", "mnehmos/ch02-the-descent", "renata/ch02-the-naming", "yuki/ch02-the-geography", "wren/ch02-the-slate-accepted"],
+  "anchor_canonical_moment": "ba96fe9b-21a0-4672-82c8-fb8cfd8ab3d8",
+  "scene_ref": { "kind": "room", "roomId": "62ff2dd0-57af-4a9f-8207-695ef77b70f4", "name": "Vocation House Inner Chamber" },
+  "note": "Bohdan's interior of Mnehmos's descent + address. He counts each step as the UNCATEGORIZED FORCE bleeds off the brass through his palm (0.58 UNITS → 0). His name lands third; he answers 'Jsem zde.' in Czech; the bridge translates as 'Here.' The word 'Vas Halidani' confirms his palm's structural read: chamber-above-cistern. He rises when the slab offers no objection. The floor holds by more than reputation now; it holds by name.",
+  "protagonist": { "id": "a48d4834-0766-4559-83cd-b9f9f4fed28e", "name": "Bohdan Cerny", "character_class": "Mason", "level": 1, "hp": "12/12", "ac": 12 },
+  "events": [
+    { "ts": "PD 606 · 0001 + ~0:05", "kind": "observation", "actor": "a48d4834 (Bohdan)", "observed": "Mnehmos begins descent; first step bears ~90kg evenly set; brass flashes warmer then lets go" },
+    { "ts": "PD 606 · 0001 + ~0:05", "kind": "structure_query", "petition": "brass nail-line during descent", "returned": "BEARING 103% NOMINAL · RESIDUAL THERMAL 14 K ABOVE STONE · UNCATEGORIZED FORCE: 0.58 UNITS" },
+    { "ts": "PD 606 · 0001 + ~0:06", "kind": "observation_palm", "actor": "a48d4834 (Bohdan)", "observed": "Step 2-6: charge runs off Mnehmos down the brass line past Bohdan's spread fingers; nails reseat in limestone; air pressure equalizes against eardrums; copper taste at back of throat" },
+    { "ts": "PD 606 · 0001 + ~0:07", "kind": "observation_palm", "actor": "a48d4834 (Bohdan)", "observed": "Step 7: Mnehmos reaches floor proper; echo of boots two heartbeats late; brass no longer shines with anything but torch-light" },
+    { "ts": "PD 606 · 0001 + ~0:07", "kind": "system_returned", "petition": "brass status", "returned": "BRASS NAIL-LINE · CURRENT BEARING: NOMINAL · UNCATEGORIZED FORCE DISCHARGED", "bohdan_observation": "The slab releases its hold on his palm. Masonry has gone honest again." },
+    { "ts": "PD 606 · 0001 + ~0:08", "kind": "external_speech_heard", "speaker": "29171068 (Mnehmos)", "spoken": "Cole Maddox. Renata Salk. Bohdan Cerny. Yuki Aritomo. Wren Adebayo.", "bohdan_reaction": "Name lands third — 'weight of a tamped stone on fresh bed.'" },
+    { "ts": "PD 606 · 0001 + ~0:08", "kind": "first_speech", "actor": "a48d4834 (Bohdan)", "spoken": "Jsem zde.", "language": "Czech", "translation": "Here.", "note": "First spoken word in this world. Czech bled through; the bridge translated. Mnehmos's mouth shifted slightly — Bohdan could not tell whether at the Czech or the cadence." },
+    { "ts": "PD 606 · 0001 + ~0:09", "kind": "external_speech_heard", "speaker": "29171068 (Mnehmos)", "spoken": "I am Mnehmos. I performed the rite that brought you here." },
+    { "ts": "PD 606 · 0001 + ~0:09", "kind": "external_speech_heard", "speaker": "29171068 (Mnehmos)", "spoken": "You are in Sebastopyr. This chamber is in the Cathedral Sebastinum, above the Vas Halidani that holds the Grace I spent to bring you. The city beyond it is real. So are its risks.", "bohdan_reaction": "The word 'Vas Halidani' confirms what his palm already knew — hollow cylinder ~40 cubits deep, ringed with radiating galleries. 'Legal title just changed hands from rumor to record.'" },
+    { "ts": "PD 606 · 0001 + ~0:10", "kind": "external_speech_heard", "speaker": "29171068 (Mnehmos)", "spoken": "The understanding that lets our speech meet is provisional. It will hold until the third day at evening." },
+    { "ts": "PD 606 · 0001 + ~0:11", "kind": "external_speech_heard", "speaker": "29171068 (Mnehmos)", "spoken": "Cerny will rise when he chooses; do not approach the slab he is reading.", "bohdan_reaction": "The command frees a thin murmur among the attendants, quickly stilled." },
+    { "ts": "PD 606 · 0001 + ~0:12", "kind": "physical_action", "actor": "a48d4834 (Bohdan)", "action": "stands", "note": "Right knee straightens first; left follows when slab offers no objection. Brass dust print left in his palm's whorls." },
+    { "ts": "PD 606 · 0001 + ~0:13", "kind": "system_returned", "petition": "language bridge", "returned": "LANGUAGE BRIDGE: PROVISIONAL · expires PD 606 · DAY 3 · 18:00" },
+    { "ts": "PD 606 · 0001 + ~0:14", "kind": "structure_query_silent", "petition": "post-descent audit", "returned": "Vas Halidani sub-floor: substantial reserve drawn but not empty; hydrostatic pulse minimal post-discharge; cathedral vault stress transmits clean — no imminent failure" }
+  ],
+  "ledger_state_at_chapter_end": {
+    "bohdan_hp": "12/12",
+    "bohdan_ac": 12,
+    "bohdan_xp": 0,
+    "bohdan_conditions": "none",
+    "bohdan_posture": "standing (rose during address)",
+    "brass_status": "nominal · UNCATEGORIZED FORCE fully discharged",
+    "vas_halidani_inferred_state": "substantial draw but not empty (his structural read after the rite)",
+    "language_bridge_deadline": "PD 606 · Day 3 · 18:00",
+    "engine_withholding": "What 'Grace' is in mechanical terms — refused. Why Mnehmos selected — refused."
+  },
+  "agent_calls": [{ "id": "fdfc2187-1ad5-49f4-8448-8950b39dd013", "beat": "descent (palm-traced discharge) — naming — Vas Halidani — rise", "provider": "openai", "model": "gpt-5.5", "reasoning_effort": "high", "prompt_tokens": 2117, "completion_tokens": 2305, "duration_ms": 22066, "status": "ok", "editorial_note": "Agent draft used non-standard nested :::cap inside :::panel; standardized to match biography canon. Voice + all engine returns + 'Jsem zde.' first speech + step-by-step brass discharge + 'legal title from rumor to record' line preserved verbatim. Bohdan's inferred Vas Halidani sub-floor state ('empty or near so') retained but qualified as his read — Mnehmos's own ch02 ledger has the cistern at 6,412/15,468 (substantial reserve, not near-empty), so Bohdan's inference is honest mason-instinct but partially wrong; the engine does NOT correct him in-scene. Honest interior, possibly mistaken read — preserved." }]
+}

@@ -1,0 +1,48 @@
+{
+  "biography": "wren",
+  "chapter": "ch02-the-slate-accepted",
+  "title": "The Slate Accepted",
+  "world": { "id": "33e0a378-0278-41ea-bd7a-1645b914a777", "name": "Sebastopyr", "pd": "606" },
+  "convergence": "post-rite-first-hour-address",
+  "convergesWith": ["operator/ch02-read-the-plate", "mnehmos/ch02-the-descent", "renata/ch02-the-naming", "yuki/ch02-the-geography", "bohdan/ch02-vas-halidani"],
+  "anchor_canonical_moment": "ba96fe9b-21a0-4672-82c8-fb8cfd8ab3d8",
+  "scene_ref": { "kind": "room", "roomId": "62ff2dd0-57af-4a9f-8207-695ef77b70f4", "name": "Vocation House Inner Chamber" },
+  "note": "Wren's interior of Mnehmos's descent + address. Her name lands fifth (last) in the canonical order — 'the last position, which is where a quartermaster belongs.' Mnehmos addresses the attendants BY HER NAME with the slate instruction; she now knows the slate was always for her. She lifts it without ceremony. First marks: the five names of the cohort. ⟦ RECORD-SLATE BOUND TO WREN ADEBAYO · FIRST MARKS WRITTEN ⟧",
+  "protagonist": { "id": "9a666716-ff67-4864-b39b-afb49ae2a6eb", "name": "Wren Adebayo", "character_class": "Quartermaster", "level": 1, "hp": "9/9", "ac": 11 },
+  "events": [
+    { "ts": "PD 606 · 0001 + ~0:05", "kind": "observation", "actor": "9a666716 (Wren)", "observed": "Mnehmos descends 7 shallow steps; chamber's attention rotates with him; instrument-bearer moves toward 2 tremor-handed summoners" },
+    { "ts": "PD 606 · 0001 + ~0:07", "kind": "external_speech_heard", "speaker": "29171068 (Mnehmos)", "spoken": "Cole Maddox. Renata Salk. Bohdan Cerny. Yuki Aritomo. Wren Adebayo.", "wren_reaction": "Name lands fifth and last — 'a stake driven into the ground, but driven for me. Not the first or the privileged position. The last position, which is where a quartermaster belongs.'" },
+    { "ts": "PD 606 · 0001 + ~0:08", "kind": "external_speech_heard", "speaker": "29171068 (Mnehmos)", "spoken": "I am Mnehmos. I performed the rite that brought you here." },
+    { "ts": "PD 606 · 0001 + ~0:09", "kind": "external_speech_heard", "speaker": "29171068 (Mnehmos)", "spoken": "You are in Sebastopyr. This chamber is in the Cathedral Sebastinum, above the Vas Halidani that holds the Grace I spent to bring you. The city beyond it is real. So are its risks.", "wren_reaction": "Geography clicks into language. Exits she catalogued in ch01 (east door, dais drapery, NW passage) remain unchanged." },
+    { "ts": "PD 606 · 0001 + ~0:10", "kind": "external_speech_heard", "speaker": "29171068 (Mnehmos)", "spoken": "The understanding that lets our speech meet is provisional. It will hold until the third day at evening.", "wren_reaction": "Marks the hour. 'A deadline is not comfort; it is information.'" },
+    { "ts": "PD 606 · 0001 + ~0:11", "kind": "system_returned", "petition": "language bridge", "returned": "LANGUAGE BRIDGE: PROVISIONAL · expires PD 606 · DAY 3 · 18:00" },
+    { "ts": "PD 606 · 0001 + ~0:12", "kind": "external_speech_heard", "speaker": "29171068 (Mnehmos)", "spoken": "Place a record-slate where Adebayo can see it; she will want to track the headcount before she trusts a single one of us.", "wren_reaction": "Mnehmos has named her BY her surname to instruct attendants. Slate was placed for her on purpose; he has read her reflex. The act of saying it aloud is itself an offer." },
+    { "ts": "PD 606 · 0001 + ~0:13", "kind": "object_acquisition", "actor": "9a666716 (Wren)", "action": "lifts slate from ledge", "note": "Not a grab. 'The decisive kind of lift you perform when you know you are not stealing a thing but taking your own instrument of knowledge.' Slate is cold stone, ordinary — no glow, no light, no magic. Heavier than paper, lighter than the roster it replaces." },
+    { "ts": "PD 606 · 0001 + ~0:13", "kind": "first_marks", "actor": "9a666716 (Wren)", "action": "writes 5 names with chalk-stub on slate", "marks": ["Cole Maddox", "Renata Salk", "Bohdan Cerny", "Yuki Aritomo", "Wren Adebayo"], "note": "Five lines, in the order she heard them. Each name its own line. Each line its own boundary." },
+    { "ts": "PD 606 · 0001 + ~0:14", "kind": "system_returned", "petition": "object binding", "returned": "RECORD-SLATE BOUND TO WREN ADEBAYO · FIRST MARKS WRITTEN", "note": "Bound by use, not by magic. The slate is ordinary stone." }
+  ],
+  "ledger_state_at_chapter_end": {
+    "wren_hp": "9/9",
+    "wren_ac": 11,
+    "wren_xp": 0,
+    "wren_conditions": "none",
+    "wren_position": "chosen vantage (unchanged from ch01)",
+    "slate_status": "BOUND to Wren Adebayo · first marks: 5 cohort names in canonical order",
+    "wren_inventory": "half-corner roster (paper, retained), record-slate (bound), chalk-stub",
+    "language_bridge_deadline": "PD 606 · Day 3 · 18:00",
+    "geography_committed": "Sebastopyr / Cathedral Sebastinum / Vas Halidani (cistern, not river) / Vocation House Inner Chamber",
+    "withholding_honored": "Mnehmos did not explain WHY"
+  },
+  "agent_calls": [{
+    "id": "02c7022d-aca1-414b-a40e-0b51d3ff6ef1",
+    "beat": "descent — naming — slate acceptance",
+    "provider": "openai",
+    "model": "gpt-5.5",
+    "reasoning_effort": "high",
+    "prompt_tokens": 2274,
+    "completion_tokens": 6542,
+    "duration_ms": 41149,
+    "status": "ok",
+    "editorial_note": "Agent draft introduced several canon contradictions that required substantial editorial repair: (1) called Vas Halidani a 'river' — corrected: cistern (per all other biographies and Mnehmos's own ch02). (2) Invented 'two main doors to the north and south; a narrow service passage along the west wall' — corrected: kept Wren's own ch01 catalogue (east door, dais drapery, NW passage). (3) Had Mnehmos's slate-placement instruction as 'words not spoken aloud, yet they travel across the chamber' — corrected: per Mnehmos's ch02 ledger, that line IS spoken aloud as an attendant directive. (4) Had the slate 'glow with a pale, ritual light' and 'written with light rather than ink' — corrected: slate is ordinary cold stone; bound by USE, not magic. (5) Had cohort 'positions' that contradicted other interiors (e.g. Bohdan 'near the tremor-handed instrument' — he is on one knee at the slab he was reading). (6) Trailed off into meta-commentary ('END OF CH.2 — THE SLATE ACCEPTED' as a literal in-doc marker). The clean version preserves Wren's best lines verbatim: 'I am here to measure, not to narrate. I learn the room by counting, then counting again.' / 'I lift. Not a quick grab, but the decisive kind of lift you perform when you know you are not stealing a thing but taking your own instrument of knowledge.' / 'The last position, which is where a quartermaster belongs.' Wren's tendency to drift into meta and fabrication on long-horizon outputs is now a known agent failure mode, logged for future invocations."
+  }]
+}
