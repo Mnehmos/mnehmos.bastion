@@ -292,7 +292,11 @@ function renderEngineLog(ledger) {
   }
   if (ledger.registration) {
     const r = ledger.registration;
-    parts.push(`<div class="elog__row"><div class="elog__h">${esc(r.event)} <span class="elog__hash">PD ${esc(r.pd || '')}</span></div><p>${esc(r.soul)} — Level ${r.level}. The soul enters the ledger.</p></div>`);
+    const cr = r.classRoll;
+    parts.push(`<div class="elog__row"><div class="elog__h">${esc(r.event)} <span class="elog__hash">PD ${esc(r.pd || '')}</span></div>
+      <p>${esc(r.soul)} — Level ${r.level}. The soul enters the ledger.</p>
+      ${cr ? `<div class="elog__sec"><h5>Class — assigned by lot</h5><p>${esc(cr.mechanic)} · ${esc(cr.dice)} → <b>${cr.result}</b> · ${esc(cr.table || '')} → <b class="conf conf--success">${esc(cr.assigned)}</b>${cr.note ? `<br><span class="muted">${esc(cr.note)}</span>` : ''}</p></div>` : ''}
+    </div>`);
   }
   if (ledger.fabrication) {
     const f = ledger.fabrication;
