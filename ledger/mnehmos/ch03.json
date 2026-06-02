@@ -1,0 +1,31 @@
+{
+  "biography": "mnehmos",
+  "chapter": "ch03-anchor",
+  "title": "Anchor",
+  "world": { "id": "33e0a378-0278-41ea-bd7a-1645b914a777", "name": "Sebastopyr", "pd": "606" },
+  "convergence": "first-night-tug-and-reveal",
+  "convergesWith": ["operator/ch02-read-the-plate"],
+  "anchor_canonical_moment": "ba96fe9b-21a0-4672-82c8-fb8cfd8ab3d8",
+  "scene_anchors": ["61f81830-b4f3-4bd4-bbb3-a7f2509021b0", "c2fd3218-a1fd-4a4e-8da9-492f81e0a407"],
+  "note": "Mnehmos's interior of Scene 3 (The Tug) + Scene 4 (What The Thread Sees) + the morning after. Devlog register: he treats the engine surfacing the 'thread, observed' row as both a priestly disaster (he is now politically exposed) and an engineering win (the held end can negotiate the cost honestly). Burden +4 total. He paid the reveal cleanly to Cole; the pact is logged; Severa walked him to bed and is keeping him from refactoring the predictive layer while burdened.",
+  "protagonist": { "id": "29171068-0b6e-4cf6-b70f-b576918a76c9", "name": "Mnehmos", "character_class": "Summoner-Priest", "level": 12 },
+  "engine_state_at_chapter_end": {
+    "vas_halidani": "5608/15468 (stable overnight; no further draw)",
+    "mnehmos_burden": "+4 this rite (heaviest since PD 594 failed salvage)",
+    "mnehmos_position": "his quarters under Severa's care; not seeing visitors today",
+    "thread_row": "observed, holding, distance-independent",
+    "pact_with_cole": "logged: no pull, no cut, no sacrificial decisions without leave (mutual)",
+    "next_milestone": "the cohort decides on Stand the Wall within ~34 hours"
+  },
+  "events": [
+    { "ts": "PD 606 · Day 1 · 03:47", "kind": "vas_reach_back", "note": "Cistern reached for Cole's lighter mass; bind said no; thread became observed via Operator's lens" },
+    { "ts": "PD 606 · Day 1 · 03:48", "kind": "system_tick", "burden_delta": "+1 (unattributed, Vas reach)" },
+    { "ts": "PD 606 · Day 1 · 03:50", "kind": "movement", "note": "Mnehmos walks barefoot through corridor; pauses at Wren's door to log the grain offer; continues to Cole's door" },
+    { "ts": "PD 606 · Day 1 · 03:52", "kind": "verbal_reveal", "spoken_word": "anchor", "burden_delta": "+2 (bind mechanics)" },
+    { "ts": "PD 606 · Day 1 · 03:54", "kind": "verbal_reveal", "spoken_sentence": "by the rite's reckoning you are me set down elsewhere", "burden_delta": "+1 (soul-identity)" },
+    { "ts": "PD 606 · Day 1 · 03:56", "kind": "pact", "with": "Cole Maddox", "terms": "no pull, no cut, no sacrificial decisions without leave" },
+    { "ts": "PD 606 · Day 1 · 03:57", "kind": "npc_action", "actor": "Severa", "action": "took Mnehmos's wrist; walked him to his quarters" },
+    { "ts": "PD 606 · Day 2 · afternoon", "kind": "devlog_authoring", "note": "Mnehmos writes the devlog row that the engine now binds observed anchors when an Operator-class subsystem reads them" }
+  ],
+  "agent_calls_referenced": ["1f26f1a0-bb92-4eb4-bd33-02965d8619b4", "2f37e796-775a-4f5f-967e-9425dcb8172b", "36cd9117-c092-42c5-b4b0-3ec10a2bcf9c"]
+}
