@@ -1,0 +1,120 @@
+{
+  "biography": "operator",
+  "chapter": "ch02-read-the-plate",
+  "title": "Read the Plate",
+  "world": { "id": "33e0a378-0278-41ea-bd7a-1645b914a777", "name": "Sebastopyr", "pd": "606" },
+  "convergence": "post-rite-first-hour",
+  "convergesWith": ["mnehmos/ch01-an-address", "mnehmos/ch02"],
+  "anchor_canonical_moment": "ba96fe9b-21a0-4672-82c8-fb8cfd8ab3d8",
+  "scene_ref": { "kind": "room", "roomId": "62ff2dd0-57af-4a9f-8207-695ef77b70f4", "name": "Vocation House Inner Chamber" },
+  "note": "First hour after the rite closes. Cole runs his Operator constraint-perception lens against the chamber for the first time. He queries the System for his sheet. He spends 1 hp from his Lay on Hands pool on Yuki (the rain-dark surveyor). Honest engine returns; no fudging.",
+  "protagonist": {
+    "id": "4388bdee-f108-4275-8377-470eb0bd68a5",
+    "name": "Cole Maddox",
+    "character_class": "Paladin (Oath Unsworn)",
+    "level": 1,
+    "hp": "12/12",
+    "ac": 12,
+    "stats": { "str": 13, "dex": 11, "con": 14, "int": 13, "wis": 16, "cha": 10 },
+    "origin": { "universe": "Contemporary Earth — Morenci Copper Mine, Arizona", "arrivedAt": "PD 606" }
+  },
+  "subsystems_installed_on_protagonist": [
+    { "name": "Operator's constraint-perception (Hierarchy of Controls)", "resource": "attentional_capacity", "at_chapter_start": "3/3", "at_chapter_end": "2/3" },
+    { "name": "Paladin (5e physics-pack)", "abilities": { "divine_sense": "1/1", "lay_on_hands_pool": "5/5 → 4/5", "spell_slots": "0/0", "oath": "Unsworn until L3" } }
+  ],
+  "events": [
+    {
+      "ts": "PD 606 · 0001 + ~0:00",
+      "kind": "subsystem_query",
+      "subsystem": "Operator constraint-perception",
+      "action": "assess",
+      "target": "room 62ff2dd0 (Vocation House Inner Chamber)",
+      "lens": "full",
+      "disposition": "COMMIT (partial)",
+      "cost_paid": { "attentional_capacity": 1 },
+      "capacity_remaining": "2/3",
+      "hazards_returned": 4,
+      "blind_spots_returned": 3,
+      "blind_spots_specifics": [
+        "Consecration field's effect on Divine Sense baseline (suggested_query: fire Divine Sense at 1/1 cost)",
+        "Names/classes/conditions of the four other cohort members (suggested_query: ask or wait for roll-call)",
+        "Mnehmos — entity is above the read's resolution"
+      ],
+      "note": "Cole's first honest use of his Operator subsystem. Returned partial commit + populated blind_spots. The Mnehmos blind-spot is the spec §7 boundary-of-perception payoff: the maker is above resolution from inside."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:03",
+      "kind": "intent",
+      "actor": "4388bdee (Cole)",
+      "action": "verbal_directive",
+      "petition": "Everybody off the brass line.",
+      "control_level": "ELIMINATION (via positioning)",
+      "outcome": "Four cohort members + Cole stepped clear of the keystone-aligned slabs",
+      "note": "Administrative control surfaced via plain speech — the first cohort coordination act. No engine roll needed; physical compliance observed."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:04",
+      "kind": "subsystem_query",
+      "subsystem": "Paladin sheet",
+      "action": "self_query",
+      "petition": "What am I now?",
+      "disposition": "COMMIT",
+      "returned": "Full sheet readout (statbox)",
+      "note": "Plain-language query to the System; honest return."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:06",
+      "kind": "ability_use",
+      "subsystem": "Paladin",
+      "ability": "Lay on Hands",
+      "actor": "4388bdee (Cole)",
+      "target": "0484a58a (Yuki Aritomo)",
+      "consent_obtained": true,
+      "consent_form": "Cole asked permission; Yuki nodded",
+      "spend": 1,
+      "pool_remaining": "4/5",
+      "engine_returned_effect": "minor restoration; cold exposure mitigated at the margin, not eliminated; wet clothing remains active heat-loss hazard",
+      "honest_returns_note": "Engine did not flatter. The wet clothing is still a hazard — Lay on Hands bought a margin, not a cure."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:08",
+      "kind": "identification",
+      "actor": "4388bdee (Cole)",
+      "action": "self_naming",
+      "spoken": "Cole Maddox. Morenci, Arizona. Heavy equipment.",
+      "note": "First introduction to the cohort. Withholds the Paladin assignment."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:09",
+      "kind": "system_voice",
+      "message": "NO XP THIS BEAT — first hour does not award; growth begins at the first earned risk",
+      "note": "Canon for Bastion's growth model: earned risk, not participation."
+    }
+  ],
+  "ledger_state_at_chapter_end": {
+    "cole_attentional_capacity": "2/3",
+    "cole_lay_on_hands_pool": "4/5",
+    "cole_divine_sense_uses": "1/1 (unspent)",
+    "cole_spell_slots": "0/0",
+    "cole_xp": 0,
+    "cole_hp": "12/12",
+    "yuki_state": "moved closer to lamp-ring; rain-wet outer layer remains active hazard; received 1 hp Lay on Hands restoration (margin only)",
+    "chamber_state": "post-rite cooling; under-floor channels still bleeding; 24 summoners still in stalls (2 with hand-tremor); Mnehmos has not descended; Severa signaled re: tremors but reaction not yet observed",
+    "cohort_named_to_each_other": ["Cole"],
+    "cohort_still_unnamed_to_each_other": ["Renata Salk", "Bohdan Cerny", "Yuki Aritomo", "Wren Adebayo"]
+  },
+  "agent_calls": [
+    {
+      "id": "848a8d4d-c1bd-465e-a126-91cc38273d75",
+      "beat": "first hour — perception, sheet query, Lay on Hands on Yuki",
+      "provider": "openai",
+      "model": "gpt-5.5",
+      "reasoning_effort": "high",
+      "prompt_tokens": 3221,
+      "completion_tokens": 6472,
+      "duration_ms": 161151,
+      "status": "ok",
+      "directive_anchor": "ba96fe9b (the receiving chamber)"
+    }
+  ]
+}
