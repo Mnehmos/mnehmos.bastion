@@ -1,0 +1,130 @@
+{
+  "biography": "mnehmos",
+  "chapter": "ch02-the-descent",
+  "title": "The Descent",
+  "world": { "id": "33e0a378-0278-41ea-bd7a-1645b914a777", "name": "Sebastopyr", "pd": "606" },
+  "convergence": "post-rite-first-hour",
+  "convergesWith": ["operator/ch01-cold-start", "operator/ch02-read-the-plate"],
+  "anchor_canonical_moment": "ba96fe9b-21a0-4672-82c8-fb8cfd8ab3d8",
+  "scene_ref": { "kind": "room", "roomId": "62ff2dd0-57af-4a9f-8207-695ef77b70f4", "name": "Vocation House Inner Chamber" },
+  "note": "First hour after the rite closes, from Mnehmos's interior. He queries the Vas (reserve falls 15,468 → 6,412), queries cohort bind status, language bridge, summoner roll, Severa's recovery, his own burden. Descends the seven shallow steps (his engineering won over the masons' sacred-number argument). Addresses the cohort by name. Does not explain his selection — resolution IV (writing-determined) honored.",
+  "protagonist": {
+    "id": "29171068-0b6e-4cf6-b70f-b576918a76c9",
+    "name": "Mnehmos",
+    "character_class": "Summoner-Priest",
+    "level": 12
+  },
+  "litRPG_surface": "Mnehmos's sheet is CITY-LEVEL, not personal HP/AC. Tracked: Vas Halidani reserve, next-rite eligibility, language-bridge expiry, cohort bind status, summoner roll, Severa's discernment pool, Mnehmos's burden meter.",
+  "events": [
+    {
+      "ts": "PD 606 · 0001 + ~0:00",
+      "kind": "system_query",
+      "petition": "What did this cost the Vas.",
+      "returned": "VAS HALIDANI · RESERVE: 6,412 / 15,468 · LAST VOCATIO DRAW: 9,056 METERED · NEXT REFILL CYCLE: PD 606 · DAY 30 · 00:00",
+      "note": "Plain-language query honored. No flattery."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:00",
+      "kind": "system_query",
+      "petition": "What's left for the next.",
+      "returned": "NEXT VOCATIO ELIGIBILITY: GATED · VAS MIN-RECOVERY 4 MONTHS",
+      "note": "This cohort is the whole of what he bought tonight."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:00",
+      "kind": "system_query_batch",
+      "petitions": ["Cohort bind.", "Language bridge.", "Summoners.", "Severa.", "My burden."],
+      "returns": [
+        "COHORT WAVE c0407606 · BIND STATUS · ALL 5 STABLE",
+        "LANGUAGE BRIDGE: PROVISIONAL · expires PD 606 · DAY 3 · 18:00",
+        "SUMMONER ROLL: 24/24 · 2 FATIGUE-FLAGGED",
+        "SEVERA · DISCERNMENT POOL: 1/1 EXPENDED · RECOVERS ~9 HOURS",
+        "MNEHMOS · BURDEN: +1 (this rite)"
+      ]
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:02",
+      "kind": "physical_action",
+      "actor": "29171068 (Mnehmos)",
+      "action": "descent_seven_steps",
+      "note": "Seven shallow steps from dais to receiving floor. The masons argued seven for sacred-number reasons; Mnehmos agreed because seven shallow are safer than five steep when carrying the weak."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:03",
+      "kind": "system_query",
+      "petition": "Show me only what can kill one of them before the hour turns.",
+      "returned": "COHORT WAVE c0407606 · TRIAGE WINDOW 01:00 — per-soul medical status + LIMITS clause (no motive read · no allegiance forecast · blind to non-physical emergents)",
+      "honest_returns_note": "Engine refused to forecast allegiance or motive. Mnehmos calls this 'Good — it refuses me the false luxury of thinking I can know more than I can.'"
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:04",
+      "kind": "directive_to_attendants",
+      "spoken": "Dry wraps and heat for Aritomo. No crowding. Stand back from Salk until she lowers her arm. Cerny will rise when he chooses. Place a record-slate where Adebayo can see it.",
+      "note": "Per-soul protocols matched to their professional reflexes. Consent floor preserved."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:05",
+      "kind": "naming",
+      "actor": "29171068 (Mnehmos)",
+      "spoken": "Cole Maddox. Renata Salk. Bohdan Cerny. Yuki Aritomo. Wren Adebayo.",
+      "note": "First time the cohort hears their names from the man who chose them."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:06",
+      "kind": "self_naming",
+      "actor": "29171068 (Mnehmos)",
+      "spoken": "I am Mnehmos. I performed the rite that brought you here.",
+      "note": "Direct attribution. Refused softening verbs (no 'were brought,' no 'fate'). First honesty is the simplest one."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:07",
+      "kind": "factual_briefing",
+      "spoken": "You are in Sebastopyr. This chamber is in the Cathedral Sebastinum, above the Vas Halidani that holds the Grace I spent to bring you. The city beyond it is real. So are its risks.",
+      "note": "Geographical fact corrected from the agent's first draft (which placed them 'in Vas Halidani' — wrong; Vas is the cistern, not the city)."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:08",
+      "kind": "acknowledgment",
+      "actor": "29171068 (Mnehmos)",
+      "to": "4388bdee (Cole)",
+      "spoken": "Maddox. You were right to clear the line. And right to ask before touching.",
+      "note": "Recognition at the right weight; not overpoured. Mnehmos saw Cole's perception fire from above."
+    },
+    {
+      "ts": "PD 606 · 0001 + ~0:09",
+      "kind": "withholding",
+      "topic": "Why Mnehmos chose each soul",
+      "note": "Per resolution IV (writing-determined): Mnehmos does NOT explain his selection in the address. He names his act ('I know your names because I selected you') without explaining the why. The why is for the prose to discover, not for him to pre-load."
+    }
+  ],
+  "ledger_state_at_chapter_end": {
+    "vas_halidani_reserve": "6,412 / 15,468",
+    "next_vocatio_gated_until": "PD 606 · ~Day 120 (4-month recovery min)",
+    "language_bridge_expires": "PD 606 · Day 3 · 18:00",
+    "cohort_bind_status": "ALL 5 STABLE",
+    "mnehmos_burden": "+1 (this rite); reducible only via earned protection",
+    "severa_discernment": "1/1 expended; recovers ~9 hours",
+    "summoner_roll": "24/24 present; 2 fatigue-flagged (Severa managing)",
+    "cohort_state_per_soul": {
+      "Cole Maddox": "stable; Paladin (Oath Unsworn) confirmed bound; Operator 2/3 attentional_capacity; Lay on Hands 4/5; Divine Sense 1/1 unspent",
+      "Renata Salk": "triage-mode active; no immediate medical risk",
+      "Bohdan Cerny": "reading masonry; no immediate medical risk",
+      "Yuki Aritomo": "exposure load persists; wet clothing active hazard; 1 hp Lay on Hands restoration logged (margin only)",
+      "Wren Adebayo": "tactically positioned; flour dust on cuff; likely first cohort speaker"
+    }
+  },
+  "agent_calls": [
+    {
+      "id": "6de60c91-4f23-4d91-881f-9b412ad8c965",
+      "beat": "audit + descent + address (raw agent draft)",
+      "provider": "openai",
+      "model": "gpt-5.5",
+      "reasoning_effort": "high",
+      "prompt_tokens": 2722,
+      "completion_tokens": 14605,
+      "duration_ms": 288939,
+      "status": "ok",
+      "editorial_note": "Agent draft hallucinated three names (Salima Darzi, Petr Novak, Ana-Maria Ibarra) instead of the canonical cohort (Renata Salk, Bohdan Cerny, Wren Adebayo). The System (orchestrator) substituted canonical names + behaviors per ba96fe9b and Cole's already-committed ch02. Voice, structure, and engine readouts preserved from the agent's draft; per-soul descriptions corrected to match each character's canonical behavior. Also corrected 'You are in Vas Halidani' → 'You are in Sebastopyr; this chamber is in the Cathedral Sebastinum above the Vas Halidani' (Vas is the cistern, not the city)."
+    }
+  ]
+}
