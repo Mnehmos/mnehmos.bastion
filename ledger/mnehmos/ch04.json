@@ -1,0 +1,33 @@
+{
+  "biography": "mnehmos",
+  "chapter": "ch04-ardin-of-ostrog",
+  "title": "Ardin of Ostrog",
+  "world": { "id": "33e0a378-0278-41ea-bd7a-1645b914a777", "name": "Sebastopyr", "pd": "606" },
+  "convergence": "day-3-negotiation",
+  "convergesWith": ["operator/ch04-the-second-bind"],
+  "anchor_canonical_moment": "ba96fe9b-21a0-4672-82c8-fb8cfd8ab3d8",
+  "scene_anchors": ["c89d9a83-6b6c-454e-96fe-6c5e6d8be422", "709cd362-a460-48cd-be2f-f6a686a2f1dc", "5e44db3e-e32a-4823-98ad-78108a23668a"],
+  "note": "Mnehmos's interior of the Day 3 afternoon negotiation. The architect on the other side made the call 11 hours early. The cohort lost the ground but Mnehmos held the office. Three gates (name, Tibor's hearing, the question), then exchange-measured-and-witnessed counter. Four Sebastopyr anchors released live on Cole's lens. 47-hour clock to teach the unbind in stages before Ardin's army discovers and replaces him with Vasko of the third school.",
+  "protagonist": { "id": "29171068-0b6e-4cf6-b70f-b576918a76c9", "name": "Mnehmos", "character_class": "Summoner-Priest", "level": 12 },
+  "antagonist": { "name": "Ardin of Ostrog", "age": 91, "burden": 11, "school": "Ostrog (fallen PD 423; last surviving lineage)", "bind_count": 47, "binds_in_sebastopyr": 4, "apprentice": "Tibor (9 years)", "fate_without_deal": "dies in spring; all 47 binds part at his death; all 47 carriers die" },
+  "successor_threat": { "name": "Vasko of the third school", "status": "unseen by Cole's lens; will inherit if Ardin discovered/replaced", "timeline": "within a week of Ardin's removal", "character": "younger, healthier, no honor" },
+  "deal_terms": {
+    "ardin_immediate": "release 4 Sebastopyr anchors; cease architect-work for eastern army",
+    "ardin_followup": "release 43 remaining Ardin-bound souls in stages; defection from eastern army architect-line",
+    "mnehmos_immediate": "begin preparation of clean cistern; Severa records",
+    "mnehmos_teaching": "unbind technique in stages, under witness, against performance; no written copy; each verified release purchases next stage; both Ardin and Tibor learn; full transmission only after last anchor unbound",
+    "ardin_arrival": "midnight tonight at breach under flag of parley",
+    "deadline": "47h 12m from 16:45 PD 606 Day 3"
+  },
+  "release_log": [
+    { "ts": "16:44:14", "anchor": "Ela Salk", "location": "hospital cot 4", "lens_observation": "chalk-line across her chest fades" },
+    { "ts": "16:44:18", "anchor": "Mark Toth", "location": "east curtain QM clerk-office", "lens_observation": "second line slack" },
+    { "ts": "16:44:23", "anchor": "Agata Nemec", "location": "bell tower", "lens_observation": "third line slack" },
+    { "ts": "16:44:31", "anchor": "Libor Reznik", "location": "Halis Gate", "lens_observation": "fourth line slack" }
+  ],
+  "mnehmos_burden_at_chapter_end": "+5 holding; will tick +1 when Ardin enters Sebastopyr at midnight",
+  "council_status": "ratification 6-3 from morning still operative; Severa running back to brief on deal terms",
+  "military_standby": "General Petrucha's hand remains authorized for 04:51 if deal collapses",
+  "engine_improvement_devlog_row": "unbind technique begins transit to second school for first time since PD 423; doctrinal change: refusal of teaching no longer default; cost of refusing must be named before refusal honored",
+  "next_chapter_spine": "midnight parley + cistern preparation + first stage of unbind teaching + 47-hour clock vs Ardin's army discovery"
+}
