@@ -1,0 +1,52 @@
+{
+  "biography": "mnehmos",
+  "chapter": "ch05-the-race",
+  "title": "The Race",
+  "world": { "id": "33e0a378-0278-41ea-bd7a-1645b914a777", "name": "Sebastopyr", "pd": "606" },
+  "convergence": "day-5-arc-ii-climax",
+  "convergesWith": ["operator/ch05-pending", "renata/ch05-pending"],
+  "anchor_canonical_moment": "fadda578-6a99-483d-89c8-a56340727ded",
+  "scene_anchors": ["3e17ebd6-eff7-4cd8-ac15-a176e2083b11", "f8cdb8a1-ebd9-49e6-b210-4f40acea55c2", "f8de0f3c-5326-42c5-aa5f-0facaf223280", "fadda578-6a99-483d-89c8-a56340727ded"],
+  "note": "Arc II climax. The two clocks close on the same window. Mnehmos races stage 3 + stage 4 against Vasko's hunt. Burns +4 burden in 26s to brace when wards crack. Stands the brace through 28 minutes of compel-working. Ardin wakes whole; deal complete; Tibor walks out with him.",
+  "protagonist": { "id": "29171068-0b6e-4cf6-b70f-b576918a76c9", "name": "Mnehmos", "character_class": "Summoner-Priest", "level": 12 },
+  "antagonist_resolution": {
+    "ardin": "deal complete; technique transmitted entire; departs east 17:30 with Tibor; ~48h to free 12-15 remaining carriers; will be executed by his army",
+    "vasko": "hunt-working failed; lost Ardin's signature when Ardin went unconscious; will resume sweep within hours; cannot reach Ardin until Ardin reaches his own camp; rite-stack chain broken — third school elder may hunt Vasko in turn"
+  },
+  "stages_taught": [
+    { "stage": 1, "topic": "preparation invariants", "when": "Day 4 07:14 → 08:28" },
+    { "stage": 2, "topic": "bind-mathematics", "when": "Day 4 22:30 → 00:00" },
+    { "stage": 3, "topic": "release technique (resonance window)", "when": "Day 5 12:00 → 14:08", "questions_answered": 8, "questions_refused": 1, "refused_question": "who taught Mnehmos this technique" },
+    { "stage": 4, "topic": "variation catalogue (Ardin's 38 remaining binds)", "when": "Day 5 14:15 → 15:34", "key_variations": ["Brunna (dying carrier; steady pulse first)", "Tomas-and-Liesel (series-anchored; 19s window)", "Hana (release through wedding ring with consent)"] }
+  ],
+  "the_brace": {
+    "ts_start": "15:00",
+    "ts_end": "16:04:18",
+    "duration_minutes": 64,
+    "burden_burn": "26 seconds: +5 → +9",
+    "burden_peak": "+11 at 15:36 when compel-working arrived",
+    "burden_at_release": "+9 (post-bracing)",
+    "ardin_resistance": "28 minutes conscious + unconscious release at 16:04 (signature loss)",
+    "vasko_outcome": "lost the signature"
+  },
+  "ardin_departure": {
+    "ts": "17:30",
+    "method": "walked through breach under signed flag of architect departing under own authority",
+    "companion": "Tibor (apprentice; volunteered)",
+    "bow": "at chalk line, held longer than protocol",
+    "deal_witness": "Severa, Bohdan, Captain Aldis, Vass (slate), Mnehmos"
+  },
+  "xp_log": [
+    { "ts": "14:08", "amount": 90, "reason": "stage 3 transmitted; refusal of ninth question preserves lineage" },
+    { "ts": "15:34", "amount": 110, "reason": "stage 4 transmitted; deal terms complete inside the window" },
+    { "ts": "16:04", "amount": 160, "reason": "the brace held; the body of the school's elder priest is a piece of the school's discipline" }
+  ],
+  "engine_state_at_chapter_end": {
+    "mnehmos_burden": "+9 holding; will tick down over 48-72h rest",
+    "cole_attentional_capacity": "0/3; recover overnight",
+    "carriers_remaining": "38 (of which 12-15 expected released in Ardin's final 48 hours)",
+    "vasko_status": "swept dark; cannot fix on Ardin until camp arrival",
+    "deal_status": "COMPLETE — all four stages purchased by verified releases inside the 47-hour window"
+  },
+  "arc_iii_opens": "Day 6 morning: first piece of news from east; the cohort recovers; Mnehmos rests for the first time in 15 years; Renata composes Tibor's mother's letter; cohort XP totals approaching L3 thresholds for several members"
+}
