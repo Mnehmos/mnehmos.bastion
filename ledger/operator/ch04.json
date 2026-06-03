@@ -1,0 +1,50 @@
+{
+  "biography": "operator",
+  "chapter": "ch04-the-second-bind",
+  "title": "The Second Bind",
+  "world": { "id": "33e0a378-0278-41ea-bd7a-1645b914a777", "name": "Sebastopyr", "pd": "606" },
+  "convergence": "day-3-morning",
+  "convergesWith": ["mnehmos/ch04-pending", "renata/ch04-pending"],
+  "anchor_canonical_moment": "ba96fe9b-21a0-4672-82c8-fb8cfd8ab3d8",
+  "scene_anchors": ["103b782f-7c2c-41db-b61a-5e0e2bbe91e2", "6f1cfa5c-bd22-4354-9114-a3e7cfd35f4f", "f11602ed-d713-4afa-ae95-302b9f9387c9"],
+  "note": "Cole's morning of Day 3. Thread woke him at 05:31; lens fired unbidden at 05:48; by 06:12 the morning had produced more intelligence than Sebastopyr had had in 9 weeks. The reveal sequence: thread brightens, three anomalies converge east, second bind observed, anchor identified as Ela (yesterday's femoral patient), Ela names Tibor (the apprentice mason from Halis), Cole keys the lens, sees Tibor on his knees in a converted granary 600m east, Tibor tries to stop and cannot, third row above Tibor, Tibor mouths 'please.' Mnehmos calls limited contact, does not reach for the architect, prioritizes Severa brief.",
+  "protagonist": { "id": "4388bdee-f108-4275-8377-470eb0bd68a5", "name": "Cole Maddox", "character_class": "Paladin (Oath Unsworn)", "level": 2, "hp_start": "21/21", "hp_end": "21/21" },
+  "key_events": [
+    { "ts": "05:31", "kind": "thread_brightening", "interior": "load reading wakes him; the strain is at Mnehmos's end, not his" },
+    { "ts": "05:48", "kind": "lens_fire", "cost": "1 attentional_capacity (3/3 -> 2/3)", "query": "directionality + strain + load path" },
+    { "ts": "05:51", "kind": "lens_return", "data": "3 vectors converge east; second bind observed; terminus A in lower cloister, terminus B 600m east of breach" },
+    { "ts": "05:53", "kind": "delegation", "to": "Bohdan", "message": "second bind, lower cloister to east breach, not his work, being tugged from outside; do not let anybody pull on anything" },
+    { "ts": "05:56", "kind": "arrival", "place": "hospital intake bay", "encounter": "Renata + Pia + Ela on cot 4" },
+    { "ts": "05:57", "kind": "containment_briefing", "to": "Renata", "preserved": "medical authority, consent floor" },
+    { "ts": "06:01", "kind": "arrival", "who": "Mnehmos", "burden": "+5", "notable": "thread dims 2 degrees when in room (Ela sharing load)" },
+    { "ts": "06:03", "kind": "consent_request", "by": "Renata", "to": "Ela", "outcome": "yes" },
+    { "ts": "06:04", "kind": "carrier_explanation", "by": "Mnehmos", "to": "Ela", "framing": "plain, no rituals, no threats" },
+    { "ts": "06:06", "kind": "carrier_response", "by": "Ela", "data": "Tibor, Halis apprentice, 14 weeks proximity, left 2 months ago, prayed over her cut hand" },
+    { "ts": "06:08", "kind": "lens_key_at_tibor", "cost": "1 attentional_capacity (2/3 -> 1/3)", "roll": "1d20+5 = 21 (nat 16)" },
+    { "ts": "06:08", "kind": "lens_return_tibor", "data": "Tibor 22, packed-earth floor, converted granary; tried to STOP, COULDN'T; third row above him; mouthed 'please'" },
+    { "ts": "06:09", "kind": "lens_release", "duration": "2 seconds" },
+    { "ts": "06:10", "kind": "engineer_call", "by": "Mnehmos", "decision": "limited contact done; do NOT reach architect; brief Severa first; council 06:30; command 07:30; Ela contained-not-isolated; identify other dawn-cold anchors; Cole watch line, do not climb stack" },
+    { "ts": "06:12", "kind": "mnehmos_departure", "destination": "find Severa" }
+  ],
+  "xp_log": [
+    { "ts": "05:48", "amount": 25, "reason": "pattern recognition + lens fired clean" },
+    { "ts": "05:57", "amount": 50, "reason": "clean handoff under load + medical authority preserved + consent floor honored" },
+    { "ts": "06:00", "amount": 40, "reason": "operator-speak threat assessment 'we just found the damn panel'" },
+    { "ts": "06:09", "amount": 35, "reason": "clean lens-key, 2-second discipline, full debrief" },
+    { "ts": "06:11", "amount": 35, "reason": "final report deferring to Mnehmos plainly" }
+  ],
+  "engine_state_at_chapter_end": {
+    "cole_level": 2,
+    "cole_hp": "21/21",
+    "cole_loh_pool": "5/5",
+    "cole_spell_slots": "2/2 L1",
+    "cole_attentional_capacity": "1/3 (2 spent this morning)",
+    "cole_xp": "570/900 toward L3",
+    "thread_status": "QUIET; architect has not noticed contact",
+    "ela_status": "contained-not-isolated; consenting monitored carrier; cot 4 hospital",
+    "tibor_status": "alive, conscious, carrier (not architect), bound from above by an unseen third terminus",
+    "second_bind_classification": "FOREIGN; network architecture (4 known anchors in Sebastopyr); architect on enemy side at rite-stack above Tibor",
+    "mnehmos_burden": "+5 holding",
+    "next_decision_window": "tomorrow's 04:50 prayer + bridge expiry at 18:00 today"
+  }
+}
