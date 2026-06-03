@@ -1,0 +1,43 @@
+{
+  "biography": "mnehmos",
+  "chapter": "ch06-the-eighteen",
+  "title": "The Eighteen",
+  "world": { "id": "33e0a378-0278-41ea-bd7a-1645b914a777", "name": "Sebastopyr", "pd": "606" },
+  "convergence": "arc-ii-close",
+  "convergesWith": ["operator/ch06-pending", "renata/ch05-pending"],
+  "anchor_canonical_moment": "5ba867bc-fe17-46e6-9e4e-904e4f0a65be",
+  "scene_anchors": ["a1cb6def-8ddf-4193-9677-75d321065e09", "5ba867bc-fe17-46e6-9e4e-904e4f0a65be"],
+  "note": "Arc II denouement. Mnehmos sleeps until six (first time in 15 years). Attends Renata's ward-round; she levels to L3 inside it. Hears Hana's ring removal through the thread; sits with grief for his own dead wife. Sends Ardin a three-sentence dispatch; receives a one-sentence reply. Waits at the chapel doorway through three morning releases. Takes the news of Ardin's death standing. Three words: 'He did the work.' Quiet for an hour. Walks the cloister at noon. The teaching is whole in two schools.",
+  "protagonist": { "id": "29171068-0b6e-4cf6-b70f-b576918a76c9", "name": "Mnehmos", "character_class": "Summoner-Priest", "level": 12 },
+  "key_acts": [
+    { "ts": "Day6 06:00", "act": "sleeps until six by Severa's order; first time in 15 years" },
+    { "ts": "Day6 06:45", "act": "reads Ardin's first slate at refectory; says only 'he is working'" },
+    { "ts": "Day6 07:00", "act": "attends Renata's ward-round at her request" },
+    { "ts": "Day6 09:11", "act": "witnesses Renata's L3 leveling inside the round (Witness's Hand unlocked)" },
+    { "ts": "Day6 18:48", "act": "reads Hana's ring removal through the thread; sits in chapel-side dark with grief for own dead wife" },
+    { "ts": "Day7 06:00", "act": "sealed dispatch to Ardin: 'army has you, use the morning, accept what you choose'" },
+    { "ts": "Day7 09:20", "act": "receives Ardin's one-sentence reply: 'the morning is mine, thank you'" },
+    { "ts": "Day7 09:20-11:00", "act": "waits at chapel doorway; does not work; does not climb rite-stack to brace at distance" },
+    { "ts": "Day7 11:00", "act": "takes Cole's report standing; three words: 'He did the work'; quiet for an hour" },
+    { "ts": "Day7 12:00", "act": "walks chapel-side cloister alone; draws water from central well; looks east" }
+  ],
+  "three_word_response": "He did the work",
+  "dispatch_to_ardin": "The army has you. The cavalry will be at Pelis by nine. Use the morning. I will accept whatever you choose.",
+  "ardins_reply": "The morning is mine. Tell Mnehmos thank you.",
+  "xp_log": [
+    { "ts": "Day6 07:00", "amount": 60, "reason": "engineer's call to walk the ward instead of working" },
+    { "ts": "Day6 18:48", "amount": 40, "reason": "sat with grief instead of working it" },
+    { "ts": "Day7 09:20-11:00", "amount": 60, "reason": "waited; held the seat; did not break Severa's rest order" },
+    { "ts": "Day7 11:00", "amount": 100, "reason": "three words; took the news standing; refused to make grief a working" }
+  ],
+  "engine_state_at_chapter_end": {
+    "mnehmos_level": 12,
+    "mnehmos_burden": "+8 holding through the day; 3 weeks to baseline",
+    "council_status": "Severa's rest order operative until full recovery",
+    "the_eighteen_released": ["Marja", "Jakub", "Mila", "Danek", "Rolan", "Brunna", "Krystof", "Marta", "Tomas", "Liesel", "Hana", "Petra", "Marek", "Old Janos", "Ela", "Mark", "Agata", "Libor"],
+    "twenty_nine_pending": "Ardin's slate in Heralt's hand; ETA eastern command camp 13:00 Day 7",
+    "tibor_status": "walking west through orchards; unmolested as of 11:00 Day 7"
+  },
+  "arc_iii_question": "Whose hand uses the slate, and whose hand burns it",
+  "next_chapter_spine": "Tibor's return; Cole's L3 leveling; Vasko's third-school elder response; the siege's new composition"
+}
