@@ -1,0 +1,38 @@
+{
+  "biography": "renata",
+  "chapter": "ch04-the-consent-floor",
+  "title": "The Consent Floor",
+  "world": { "id": "33e0a378-0278-41ea-bd7a-1645b914a777", "name": "Sebastopyr", "pd": "606" },
+  "convergence": "arc-ii-climax",
+  "convergesWith": ["mnehmos/ch04-ardin-of-ostrog", "mnehmos/ch05-the-race", "operator/ch04-the-second-bind", "operator/ch05-sweep-to-fix"],
+  "anchor_canonical_moment": "fadda578-6a99-483d-89c8-a56340727ded",
+  "scene_anchors": ["ba96fe9b-21a0-4672-82c8-fb8cfd8ab3d8", "6507ad32-6ad8-4c4c-9a8a-9236037a2d0d", "f8cdb8a1-ebd9-49e6-b210-4f40acea55c2", "fadda578-6a99-483d-89c8-a56340727ded"],
+  "note": "Renata's spine through Arc II. Writes the intake protocol that brings Ardin in as patient not prisoner. Examines him on arrival. Holds Tibor through 28 minutes of compel-working by reading him Calabrese. Gives Tibor the four-sentence slate at the doorway before he walks east. Consent floor intact.",
+  "protagonist": { "id": "ba5b08f1-7b94-4488-a0fd-628936cf9495", "name": "Renata Pavlik", "character_class": "Surgeon (Field)", "level": 2 },
+  "key_acts": [
+    { "ts": "Day3 17:00", "act": "writes intake protocol for Ardin as patient", "countersigned": "Severa; entered into council ledger" },
+    { "ts": "Day4 00:14", "act": "meets Ardin at threshold; reads bind-cold differential 11 degrees; 22-min examination" },
+    { "ts": "Day4 00:36", "act": "tells Ardin every finding before telling Mnehmos; Ardin asks to see Tibor's chart; Renata brings it; Ardin says 'tell him sorry, do not tell him sorry for what'" },
+    { "ts": "Day5 06:40", "act": "Tibor wakes; Renata tells him he is not bound; Tibor cries; Renata waits without touching" },
+    { "ts": "Day5 06:55", "act": "consent floor speech to Tibor on waking: 'you are a patient; not a prisoner; not a compelled witness; your body is your own'" },
+    { "ts": "Day5 11:34", "act": "moves Tibor and three dawn-cold patients out of line-of-sight to the cistern when Cole's first runner passes" },
+    { "ts": "Day5 14:32 → 16:04", "act": "reads Tibor Calabrese's eighth letter through 28 minutes of compel-working; holds his hand at 15:36; does not pretend to know what Tibor is feeling through which channel" },
+    { "ts": "Day5 17:25", "act": "writes four-sentence consent slate; gives it to Tibor at doorway; he reads, pockets it against chest, nods" }
+  ],
+  "tibors_slate": "Tibor: you were not bound when you made this choice. You owe Ardin nothing. You owe me nothing. You have the right to walk back. Renata.",
+  "xp_log": [
+    { "ts": "Day3 17:00", "amount": 30, "reason": "intake protocol countersigned" },
+    { "ts": "Day4 00:36", "amount": 50, "reason": "intake of antagonist as patient on equal terms" },
+    { "ts": "Day5 06:55", "amount": 60, "reason": "consent floor speech at Tibor's waking" },
+    { "ts": "Day5 16:04", "amount": 70, "reason": "held Tibor through 28 min of an event she could not intervene in" },
+    { "ts": "Day5 17:25", "amount": 80, "reason": "four-sentence slate makes consent floor portable" }
+  ],
+  "engine_state_at_chapter_end": {
+    "renata_level": 2,
+    "renata_xp": "695/900 toward L3",
+    "consent_floor_status": "intact; ward closed 19:00 Day 5; eight hours sleep first time since arrival",
+    "tibor_disposition": "departed east with Ardin under choice; carrying Renata's four-sentence slate against chest; right of return written",
+    "hospital_handoff": "Pia owns night shift; Renata owns dawn ward-round"
+  },
+  "arc_iii_opens": "Day 6 dawn: ward-round will surface bind-cold patients now slackening as Ardin works east; Renata will reach L3 inside the ward-round; first piece of news from east arrives ~09:00"
+}
